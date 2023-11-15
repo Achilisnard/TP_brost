@@ -1,0 +1,138 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'im_load'" level="0">
+<item name = "Date">Thu Dec  2 08:37:25 2021
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">im_load</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.467 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">922561, 922561, 9.226 ms, 9.226 ms, 922561, 922561, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- Loop 1">922560, 922560, 1922, -, -, 480, no</column>
+<column name=" + Loop 1.1">1920, 1920, 3, -, -, 640, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 139, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, -, -, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 60, -</column>
+<column name="Register">-, -, 63, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln42_1_fu_198_p2">+, 0, 0, 23, 16, 16</column>
+<column name="add_ln42_fu_207_p2">+, 0, 0, 26, 19, 19</column>
+<column name="i_fu_118_p2">+, 0, 0, 15, 9, 1</column>
+<column name="j_fu_154_p2">+, 0, 0, 14, 10, 1</column>
+<column name="icmp_ln23_fu_112_p2">icmp, 0, 0, 13, 9, 7</column>
+<column name="icmp_ln25_fu_148_p2">icmp, 0, 0, 13, 10, 10</column>
+<column name="icmp_ln29_fu_186_p2">icmp, 0, 0, 13, 10, 1</column>
+<column name="icmp_ln34_fu_192_p2">icmp, 0, 0, 13, 10, 10</column>
+<column name="or_ln29_fu_164_p2">or, 0, 0, 9, 9, 9</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">33, 6, 1, 6</column>
+<column name="i_0_reg_89">9, 2, 9, 18</column>
+<column name="j_0_reg_101">9, 2, 10, 20</column>
+<column name="video_TDATA_blk_n">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">5, 0, 5, 0</column>
+<column name="i_0_reg_89">9, 0, 9, 0</column>
+<column name="i_reg_220">9, 0, 9, 0</column>
+<column name="icmp_ln29_reg_243">1, 0, 1, 0</column>
+<column name="icmp_ln34_reg_248">1, 0, 1, 0</column>
+<column name="j_0_reg_101">10, 0, 10, 0</column>
+<column name="j_reg_238">10, 0, 10, 0</column>
+<column name="shl_ln42_1_reg_230">9, 0, 16, 7</column>
+<column name="zext_ln42_1_reg_225">9, 0, 19, 10</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, im_load, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, im_load, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, im_load, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, im_load, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, im_load, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, im_load, return value</column>
+<column name="video_TDATA">out, 8, axis, video_data_p_V, pointer</column>
+<column name="video_TVALID">out, 1, axis, video_last_V, pointer</column>
+<column name="video_TREADY">in, 1, axis, video_last_V, pointer</column>
+<column name="video_TLAST">out, 1, axis, video_last_V, pointer</column>
+<column name="video_TUSER">out, 1, axis, video_user_V, pointer</column>
+<column name="mem_V_address0">out, 19, ap_memory, mem_V, array</column>
+<column name="mem_V_ce0">out, 1, ap_memory, mem_V, array</column>
+<column name="mem_V_q0">in, 8, ap_memory, mem_V, array</column>
+</table>
+</item>
+</section>
+</profile>

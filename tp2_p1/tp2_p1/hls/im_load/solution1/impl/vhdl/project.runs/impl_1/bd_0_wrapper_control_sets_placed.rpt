@@ -1,0 +1,89 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Oct  4 15:12:13 2023
+| Host         : gs21-10 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file bd_0_wrapper_control_sets_placed.rpt
+| Design       : bd_0_wrapper
+| Device       : xc7z020
+-----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    11 |
+|    Minimum number of control sets                        |    11 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    61 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    11 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     4 |
+| >= 10 to < 12      |     4 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              10 |            6 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              10 |            3 |
+| Yes          | No                    | No                     |              66 |           21 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              37 |           11 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------+-----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+----------------+
+| Clock Signal |                                      Enable Signal                                      |                                  Set/Reset Signal                                  | Slice Load Count | Bel Load Count |
++--------------+-----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+----------------+
+|  ap_clk      | bd_0_i/hls_inst/U0/regslice_both_m_axis_video_V_data_V_U/E[0]                           |                                                                                    |                2 |              9 |
+|  ap_clk      | bd_0_i/hls_inst/U0/ap_NS_fsm14_out                                                      | bd_0_i/hls_inst/U0/i_0_reg_135                                                     |                3 |              9 |
+|  ap_clk      | bd_0_i/hls_inst/U0/regslice_both_m_axis_video_V_data_V_U/obuf_inst/odata_int[7]_i_2_n_1 | bd_0_i/hls_inst/U0/regslice_both_m_axis_video_V_data_V_U/obuf_inst/SR[0]           |                2 |              9 |
+|  ap_clk      | bd_0_i/hls_inst/U0/regslice_both_m_axis_video_V_data_V_U/obuf_inst/E[0]                 | bd_0_i/hls_inst/U0/regslice_both_m_axis_video_V_data_V_U/ibuf_inst/ireg[8]_i_1_n_1 |                2 |              9 |
+|  ap_clk      |                                                                                         |                                                                                    |                6 |             10 |
+|  ap_clk      |                                                                                         | bd_0_i/hls_inst/U0/regslice_both_m_axis_video_V_data_V_U/obuf_inst/SR[0]           |                3 |             10 |
+|  ap_clk      | bd_0_i/hls_inst/U0/mem_V_ce0                                                            |                                                                                    |                4 |             10 |
+|  ap_clk      | bd_0_i/hls_inst/U0/regslice_both_m_axis_video_V_data_V_U/ibuf_inst/ap_CS_fsm_reg[4][0]  | bd_0_i/hls_inst/U0/regslice_both_m_axis_video_V_data_V_U/ap_NS_fsm16_out           |                4 |             10 |
+|  ap_clk      | bd_0_i/hls_inst/U0/regslice_both_m_axis_video_V_data_V_U/and_ln879_1_reg_407_reg[0][0]  |                                                                                    |                4 |             12 |
+|  ap_clk      | bd_0_i/hls_inst/U0/regslice_both_m_axis_video_V_data_V_U/or_ln879_1_reg_412_reg[0][0]   |                                                                                    |                4 |             12 |
+|  ap_clk      | bd_0_i/hls_inst/U0/regslice_both_m_axis_video_V_data_V_U/ap_NS_fsm16_out                |                                                                                    |                7 |             23 |
++--------------+-----------------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+----------------+
+
+

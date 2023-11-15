@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Register 'window_V_2_1' is power-on initialization." projectName="FILTER_CONVOLUTION" solutionName="solution1" date="2022-02-19T22:13:22.429+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'window_V_1_1' is power-on initialization." projectName="FILTER_CONVOLUTION" solutionName="solution1" date="2022-02-19T22:13:22.390+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'window_V_0_1' is power-on initialization." projectName="FILTER_CONVOLUTION" solutionName="solution1" date="2022-02-19T22:13:22.370+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'window_V_2_2' is power-on initialization." projectName="FILTER_CONVOLUTION" solutionName="solution1" date="2022-02-19T22:13:22.196+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'window_V_1_2' is power-on initialization." projectName="FILTER_CONVOLUTION" solutionName="solution1" date="2022-02-19T22:13:22.176+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Register 'window_V_0_2' is power-on initialization." projectName="FILTER_CONVOLUTION" solutionName="solution1" date="2022-02-19T22:13:22.157+0100" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] The critical path in module 'Filter_Convolution' consists of the following:&#xD;&#xA;&#x9;'load' operation ('window_V_2_1_load', FILTER_CONVOLUTION/Filter_convolution.cpp:50) on static variable 'window_V_2_1' [117]  (0 ns)&#xD;&#xA;&#x9;'mul' operation of DSP[184] ('mul_ln1371_6', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [169]  (3.36 ns)&#xD;&#xA;&#x9;'add' operation of DSP[184] ('add_ln1371_5', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [184]  (3.02 ns)&#xD;&#xA;&#x9;'add' operation ('add_ln1371_6', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [186]  (1.68 ns)&#xD;&#xA;&#x9;'add' operation ('add_ln1371_7', FILTER_CONVOLUTION/Filter_convolution.cpp:14->FILTER_CONVOLUTION/Filter_convolution.cpp:84) [188]  (1.68 ns)" projectName="FILTER_CONVOLUTION" solutionName="solution1" date="2022-02-19T22:13:21.610+0100" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-21] Estimated clock period (9.739ns) exceeds the target (target clock period: 10ns, clock uncertainty: 1.25ns, effective delay budget: 8.75ns)." projectName="FILTER_CONVOLUTION" solutionName="solution1" date="2022-02-19T22:13:21.590+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-124] Array  'out_img.V': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="FILTER_CONVOLUTION" solutionName="solution1" date="2022-02-19T22:13:21.188+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-124] Array  'in_img.V': may have improper streaming access(es), possible reasons: (1) some entries are accessed more than once; (2) some entries are not used; (3) the entries are not accessed in sequential order." projectName="FILTER_CONVOLUTION" solutionName="solution1" date="2022-02-19T22:13:21.138+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

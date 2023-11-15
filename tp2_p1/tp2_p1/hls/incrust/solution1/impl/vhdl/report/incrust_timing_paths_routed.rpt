@@ -1,0 +1,546 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Nov 15 09:16:12 2023
+| Host         : gs21-10 running 64-bit major release  (build 9200)
+| Command      : report_timing -max_paths 10 -file ./report/incrust_timing_paths_routed.rpt
+| Design       : bd_0_wrapper
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+--------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             4.070ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0/ADDRARDADDR[5]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.280ns  (logic 1.056ns (20.000%)  route 4.224ns (80.000%))
+  Logic Levels:           3  (LUT2=2 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.973     0.973    bd_0_i/hls_inst/U0/ap_clk
+    SLICE_X35Y63         FDSE                                         r  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y63         FDSE (Prop_fdse_C_Q)         0.456     1.429 f  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/Q
+                         net (fo=3, routed)           0.646     2.075    bd_0_i/hls_inst/U0/ap_CS_fsm_reg_n_1_[0]
+    SLICE_X35Y64         LUT2 (Prop_lut2_I0_O)        0.150     2.225 f  bd_0_i/hls_inst/U0/start_x_read_reg_359[31]_i_1/O
+                         net (fo=131, routed)         0.817     3.043    bd_0_i/hls_inst/U0/ap_NS_fsm12_out
+    SLICE_X42Y63         LUT6 (Prop_lut6_I0_O)        0.326     3.369 f  bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1/O
+                         net (fo=28, routed)          1.361     4.730    bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1_n_1
+    SLICE_X30Y59         LUT2 (Prop_lut2_I1_O)        0.124     4.854 r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_11/O
+                         net (fo=4, routed)           1.399     6.253    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_11_n_1
+    RAMB36_X2Y14         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0/ADDRARDADDR[5]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.924    10.924    bd_0_i/hls_inst/U0/ap_clk
+    RAMB36_X2Y14         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0/CLKARDCLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    RAMB36_X2Y14         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[5])
+                                                     -0.566    10.323    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0
+  -------------------------------------------------------------------
+                         required time                         10.323    
+                         arrival time                          -6.253    
+  -------------------------------------------------------------------
+                         slack                                  4.070    
+
+Slack (MET) :             4.078ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0/ADDRARDADDR[2]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.048ns  (logic 1.084ns (21.475%)  route 3.964ns (78.525%))
+  Logic Levels:           3  (LUT2=2 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.973     0.973    bd_0_i/hls_inst/U0/ap_clk
+    SLICE_X35Y63         FDSE                                         r  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y63         FDSE (Prop_fdse_C_Q)         0.456     1.429 f  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/Q
+                         net (fo=3, routed)           0.646     2.075    bd_0_i/hls_inst/U0/ap_CS_fsm_reg_n_1_[0]
+    SLICE_X35Y64         LUT2 (Prop_lut2_I0_O)        0.150     2.225 f  bd_0_i/hls_inst/U0/start_x_read_reg_359[31]_i_1/O
+                         net (fo=131, routed)         0.817     3.043    bd_0_i/hls_inst/U0/ap_NS_fsm12_out
+    SLICE_X42Y63         LUT6 (Prop_lut6_I0_O)        0.326     3.369 f  bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1/O
+                         net (fo=28, routed)          1.351     4.720    bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1_n_1
+    SLICE_X30Y59         LUT2 (Prop_lut2_I1_O)        0.152     4.872 r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_14/O
+                         net (fo=4, routed)           1.149     6.021    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_14_n_1
+    RAMB36_X2Y14         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0/ADDRARDADDR[2]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.924    10.924    bd_0_i/hls_inst/U0/ap_clk
+    RAMB36_X2Y14         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0/CLKARDCLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    RAMB36_X2Y14         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[2])
+                                                     -0.790    10.099    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0
+  -------------------------------------------------------------------
+                         required time                         10.099    
+                         arrival time                          -6.021    
+  -------------------------------------------------------------------
+                         slack                                  4.078    
+
+Slack (MET) :             4.111ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0/ADDRARDADDR[3]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.035ns  (logic 1.082ns (21.489%)  route 3.953ns (78.511%))
+  Logic Levels:           3  (LUT2=2 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.973     0.973    bd_0_i/hls_inst/U0/ap_clk
+    SLICE_X35Y63         FDSE                                         r  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y63         FDSE (Prop_fdse_C_Q)         0.456     1.429 f  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/Q
+                         net (fo=3, routed)           0.646     2.075    bd_0_i/hls_inst/U0/ap_CS_fsm_reg_n_1_[0]
+    SLICE_X35Y64         LUT2 (Prop_lut2_I0_O)        0.150     2.225 f  bd_0_i/hls_inst/U0/start_x_read_reg_359[31]_i_1/O
+                         net (fo=131, routed)         0.817     3.043    bd_0_i/hls_inst/U0/ap_NS_fsm12_out
+    SLICE_X42Y63         LUT6 (Prop_lut6_I0_O)        0.326     3.369 f  bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1/O
+                         net (fo=28, routed)          1.361     4.730    bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1_n_1
+    SLICE_X30Y59         LUT2 (Prop_lut2_I1_O)        0.150     4.880 r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_13/O
+                         net (fo=4, routed)           1.128     6.008    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_13_n_1
+    RAMB36_X2Y14         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0/ADDRARDADDR[3]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.924    10.924    bd_0_i/hls_inst/U0/ap_clk
+    RAMB36_X2Y14         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0/CLKARDCLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    RAMB36_X2Y14         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[3])
+                                                     -0.770    10.119    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0
+  -------------------------------------------------------------------
+                         required time                         10.119    
+                         arrival time                          -6.008    
+  -------------------------------------------------------------------
+                         slack                                  4.111    
+
+Slack (MET) :             4.124ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0/ADDRARDADDR[14]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.002ns  (logic 1.082ns (21.630%)  route 3.920ns (78.370%))
+  Logic Levels:           3  (LUT2=2 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.973     0.973    bd_0_i/hls_inst/U0/ap_clk
+    SLICE_X35Y63         FDSE                                         r  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y63         FDSE (Prop_fdse_C_Q)         0.456     1.429 f  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/Q
+                         net (fo=3, routed)           0.646     2.075    bd_0_i/hls_inst/U0/ap_CS_fsm_reg_n_1_[0]
+    SLICE_X35Y64         LUT2 (Prop_lut2_I0_O)        0.150     2.225 f  bd_0_i/hls_inst/U0/start_x_read_reg_359[31]_i_1/O
+                         net (fo=131, routed)         0.817     3.043    bd_0_i/hls_inst/U0/ap_NS_fsm12_out
+    SLICE_X42Y63         LUT6 (Prop_lut6_I0_O)        0.326     3.369 f  bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1/O
+                         net (fo=28, routed)          1.339     4.707    bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1_n_1
+    SLICE_X30Y61         LUT2 (Prop_lut2_I1_O)        0.150     4.857 r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_2/O
+                         net (fo=4, routed)           1.118     5.975    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_2_n_1
+    RAMB36_X2Y14         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0/ADDRARDADDR[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.924    10.924    bd_0_i/hls_inst/U0/ap_clk
+    RAMB36_X2Y14         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0/CLKARDCLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    RAMB36_X2Y14         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[14])
+                                                     -0.790    10.099    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0
+  -------------------------------------------------------------------
+                         required time                         10.099    
+                         arrival time                          -5.975    
+  -------------------------------------------------------------------
+                         slack                                  4.124    
+
+Slack (MET) :             4.168ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_1/ADDRARDADDR[3]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.978ns  (logic 1.082ns (21.737%)  route 3.896ns (78.263%))
+  Logic Levels:           3  (LUT2=2 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.973     0.973    bd_0_i/hls_inst/U0/ap_clk
+    SLICE_X35Y63         FDSE                                         r  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y63         FDSE (Prop_fdse_C_Q)         0.456     1.429 f  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/Q
+                         net (fo=3, routed)           0.646     2.075    bd_0_i/hls_inst/U0/ap_CS_fsm_reg_n_1_[0]
+    SLICE_X35Y64         LUT2 (Prop_lut2_I0_O)        0.150     2.225 f  bd_0_i/hls_inst/U0/start_x_read_reg_359[31]_i_1/O
+                         net (fo=131, routed)         0.817     3.043    bd_0_i/hls_inst/U0/ap_NS_fsm12_out
+    SLICE_X42Y63         LUT6 (Prop_lut6_I0_O)        0.326     3.369 f  bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1/O
+                         net (fo=28, routed)          1.361     4.730    bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1_n_1
+    SLICE_X30Y59         LUT2 (Prop_lut2_I1_O)        0.150     4.880 r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_13/O
+                         net (fo=4, routed)           1.070     5.951    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_13_n_1
+    RAMB36_X2Y13         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_1/ADDRARDADDR[3]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.924    10.924    bd_0_i/hls_inst/U0/ap_clk
+    RAMB36_X2Y13         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_1/CLKARDCLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    RAMB36_X2Y13         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[3])
+                                                     -0.770    10.119    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_1
+  -------------------------------------------------------------------
+                         required time                         10.119    
+                         arrival time                          -5.951    
+  -------------------------------------------------------------------
+                         slack                                  4.168    
+
+Slack (MET) :             4.183ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_1/ADDRARDADDR[14]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.943ns  (logic 1.082ns (21.890%)  route 3.861ns (78.110%))
+  Logic Levels:           3  (LUT2=2 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.973     0.973    bd_0_i/hls_inst/U0/ap_clk
+    SLICE_X35Y63         FDSE                                         r  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y63         FDSE (Prop_fdse_C_Q)         0.456     1.429 f  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/Q
+                         net (fo=3, routed)           0.646     2.075    bd_0_i/hls_inst/U0/ap_CS_fsm_reg_n_1_[0]
+    SLICE_X35Y64         LUT2 (Prop_lut2_I0_O)        0.150     2.225 f  bd_0_i/hls_inst/U0/start_x_read_reg_359[31]_i_1/O
+                         net (fo=131, routed)         0.817     3.043    bd_0_i/hls_inst/U0/ap_NS_fsm12_out
+    SLICE_X42Y63         LUT6 (Prop_lut6_I0_O)        0.326     3.369 f  bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1/O
+                         net (fo=28, routed)          1.339     4.707    bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1_n_1
+    SLICE_X30Y61         LUT2 (Prop_lut2_I1_O)        0.150     4.857 r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_2/O
+                         net (fo=4, routed)           1.059     5.916    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_2_n_1
+    RAMB36_X2Y13         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_1/ADDRARDADDR[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.924    10.924    bd_0_i/hls_inst/U0/ap_clk
+    RAMB36_X2Y13         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_1/CLKARDCLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    RAMB36_X2Y13         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[14])
+                                                     -0.790    10.099    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_1
+  -------------------------------------------------------------------
+                         required time                         10.099    
+                         arrival time                          -5.916    
+  -------------------------------------------------------------------
+                         slack                                  4.183    
+
+Slack (MET) :             4.183ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_3/ADDRARDADDR[14]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.943ns  (logic 1.082ns (21.890%)  route 3.861ns (78.110%))
+  Logic Levels:           3  (LUT2=2 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.973     0.973    bd_0_i/hls_inst/U0/ap_clk
+    SLICE_X35Y63         FDSE                                         r  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y63         FDSE (Prop_fdse_C_Q)         0.456     1.429 f  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/Q
+                         net (fo=3, routed)           0.646     2.075    bd_0_i/hls_inst/U0/ap_CS_fsm_reg_n_1_[0]
+    SLICE_X35Y64         LUT2 (Prop_lut2_I0_O)        0.150     2.225 f  bd_0_i/hls_inst/U0/start_x_read_reg_359[31]_i_1/O
+                         net (fo=131, routed)         0.817     3.043    bd_0_i/hls_inst/U0/ap_NS_fsm12_out
+    SLICE_X42Y63         LUT6 (Prop_lut6_I0_O)        0.326     3.369 f  bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1/O
+                         net (fo=28, routed)          1.339     4.707    bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1_n_1
+    SLICE_X30Y61         LUT2 (Prop_lut2_I1_O)        0.150     4.857 r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_2/O
+                         net (fo=4, routed)           1.059     5.916    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_2_n_1
+    RAMB36_X2Y11         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_3/ADDRARDADDR[14]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.924    10.924    bd_0_i/hls_inst/U0/ap_clk
+    RAMB36_X2Y11         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_3/CLKARDCLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    RAMB36_X2Y11         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[14])
+                                                     -0.790    10.099    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_3
+  -------------------------------------------------------------------
+                         required time                         10.099    
+                         arrival time                          -5.916    
+  -------------------------------------------------------------------
+                         slack                                  4.183    
+
+Slack (MET) :             4.227ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/U0/j_0_reg_169_reg[7]/C
+                            (rising edge-triggered cell FDRE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_2/ENARDEN
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.038ns  (logic 1.671ns (33.165%)  route 3.367ns (66.835%))
+  Logic Levels:           6  (CARRY4=4 LUT4=1 LUT5=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.973     0.973    bd_0_i/hls_inst/U0/ap_clk
+    SLICE_X42Y63         FDRE                                         r  bd_0_i/hls_inst/U0/j_0_reg_169_reg[7]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X42Y63         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  bd_0_i/hls_inst/U0/j_0_reg_169_reg[7]/Q
+                         net (fo=8, routed)           1.008     2.459    bd_0_i/hls_inst/U0/j_0_reg_169[7]
+    SLICE_X40Y64         LUT4 (Prop_lut4_I1_O)        0.301     2.760 r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_88/O
+                         net (fo=1, routed)           0.000     2.760    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_88_n_1
+    SLICE_X40Y64         CARRY4 (Prop_carry4_S[3]_CO[3])
+                                                      0.401     3.161 r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_67/CO[3]
+                         net (fo=1, routed)           0.000     3.161    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_67_n_1
+    SLICE_X40Y65         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     3.275 r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_49/CO[3]
+                         net (fo=1, routed)           0.000     3.275    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_49_n_1
+    SLICE_X40Y66         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     3.389 r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_31/CO[3]
+                         net (fo=1, routed)           0.000     3.389    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_31_n_1
+    SLICE_X40Y67         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.114     3.503 r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_17/CO[3]
+                         net (fo=3, routed)           1.519     5.023    bd_0_i/hls_inst/U0/icmp_ln25_3_fu_265_p2
+    SLICE_X35Y66         LUT5 (Prop_lut5_I4_O)        0.149     5.172 r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_1/O
+                         net (fo=4, routed)           0.840     6.011    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_1_n_1
+    RAMB36_X2Y12         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_2/ENARDEN
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.924    10.924    bd_0_i/hls_inst/U0/ap_clk
+    RAMB36_X2Y12         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_2/CLKARDCLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    RAMB36_X2Y12         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ENARDEN)
+                                                     -0.651    10.238    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_2
+  -------------------------------------------------------------------
+                         required time                         10.238    
+                         arrival time                          -6.011    
+  -------------------------------------------------------------------
+                         slack                                  4.227    
+
+Slack (MET) :             4.268ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_1/ADDRARDADDR[5]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        5.082ns  (logic 1.056ns (20.781%)  route 4.026ns (79.220%))
+  Logic Levels:           3  (LUT2=2 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.973     0.973    bd_0_i/hls_inst/U0/ap_clk
+    SLICE_X35Y63         FDSE                                         r  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y63         FDSE (Prop_fdse_C_Q)         0.456     1.429 f  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/Q
+                         net (fo=3, routed)           0.646     2.075    bd_0_i/hls_inst/U0/ap_CS_fsm_reg_n_1_[0]
+    SLICE_X35Y64         LUT2 (Prop_lut2_I0_O)        0.150     2.225 f  bd_0_i/hls_inst/U0/start_x_read_reg_359[31]_i_1/O
+                         net (fo=131, routed)         0.817     3.043    bd_0_i/hls_inst/U0/ap_NS_fsm12_out
+    SLICE_X42Y63         LUT6 (Prop_lut6_I0_O)        0.326     3.369 f  bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1/O
+                         net (fo=28, routed)          1.361     4.730    bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1_n_1
+    SLICE_X30Y59         LUT2 (Prop_lut2_I1_O)        0.124     4.854 r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_11/O
+                         net (fo=4, routed)           1.201     6.055    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_11_n_1
+    RAMB36_X2Y13         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_1/ADDRARDADDR[5]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.924    10.924    bd_0_i/hls_inst/U0/ap_clk
+    RAMB36_X2Y13         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_1/CLKARDCLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    RAMB36_X2Y13         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[5])
+                                                     -0.566    10.323    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_1
+  -------------------------------------------------------------------
+                         required time                         10.323    
+                         arrival time                          -6.055    
+  -------------------------------------------------------------------
+                         slack                                  4.268    
+
+Slack (MET) :             4.273ns  (required time - arrival time)
+  Source:                 bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+                            (rising edge-triggered cell FDSE clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0/ADDRARDADDR[11]
+                            (rising edge-triggered cell RAMB36E1 clocked by ap_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             ap_clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (ap_clk rise@10.000ns - ap_clk rise@0.000ns)
+  Data Path Delay:        4.873ns  (logic 1.080ns (22.162%)  route 3.793ns (77.838%))
+  Logic Levels:           3  (LUT2=2 LUT6=1)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock ap_clk rise edge)     0.000     0.000 r  
+                                                      0.000     0.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.973     0.973    bd_0_i/hls_inst/U0/ap_clk
+    SLICE_X35Y63         FDSE                                         r  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X35Y63         FDSE (Prop_fdse_C_Q)         0.456     1.429 f  bd_0_i/hls_inst/U0/ap_CS_fsm_reg[0]/Q
+                         net (fo=3, routed)           0.646     2.075    bd_0_i/hls_inst/U0/ap_CS_fsm_reg_n_1_[0]
+    SLICE_X35Y64         LUT2 (Prop_lut2_I0_O)        0.150     2.225 f  bd_0_i/hls_inst/U0/start_x_read_reg_359[31]_i_1/O
+                         net (fo=131, routed)         0.817     3.043    bd_0_i/hls_inst/U0/ap_NS_fsm12_out
+    SLICE_X42Y63         LUT6 (Prop_lut6_I0_O)        0.326     3.369 f  bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1/O
+                         net (fo=28, routed)          1.341     4.709    bd_0_i/hls_inst/U0/pixel_1_fu_86[0]_i_1_n_1
+    SLICE_X30Y61         LUT2 (Prop_lut2_I1_O)        0.148     4.857 r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_5/O
+                         net (fo=4, routed)           0.989     5.846    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0_i_5_n_1
+    RAMB36_X2Y14         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0/ADDRARDADDR[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock ap_clk rise edge)    10.000    10.000 r  
+                                                      0.000    10.000 r  ap_clk (IN)
+                         net (fo=381, unset)          0.924    10.924    bd_0_i/hls_inst/U0/ap_clk
+    RAMB36_X2Y14         RAMB36E1                                     r  bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0/CLKARDCLK
+                         clock pessimism              0.000    10.924    
+                         clock uncertainty           -0.035    10.889    
+    RAMB36_X2Y14         RAMB36E1 (Setup_ramb36e1_CLKARDCLK_ADDRARDADDR[11])
+                                                     -0.770    10.119    bd_0_i/hls_inst/U0/pixel_1_fu_86_reg_rep_0
+  -------------------------------------------------------------------
+                         required time                         10.119    
+                         arrival time                          -5.846    
+  -------------------------------------------------------------------
+                         slack                                  4.273    
+
+
+
+

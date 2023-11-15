@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="sobel.cpp" path="C:\formation_hls\video_vga_7511_zed\hls\sobel\sobel.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="sobel_tb.cpp" path="C:\formation_hls\video_vga_7511_zed\hls\sobel\sobel_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

@@ -1,0 +1,220 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Nov 15 09:17:38 2023
+| Host         : gs21-10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_incrust_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of design_1_incrust_0_0 (xilinx.com:hls:incrust:1.1 (Rev. 1)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_incrust_0_0'.
+
+
+-Upgrade has added interface 's_axi_AXILiteS' (xilinx.com:interface:aximm:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_incrust_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 's_axi_AXILiteS_ARADDR'
+
+-Upgrade has added port 's_axi_AXILiteS_ARREADY'
+
+-Upgrade has added port 's_axi_AXILiteS_ARVALID'
+
+-Upgrade has added port 's_axi_AXILiteS_AWADDR'
+
+-Upgrade has added port 's_axi_AXILiteS_AWREADY'
+
+-Upgrade has added port 's_axi_AXILiteS_AWVALID'
+
+-Upgrade has added port 's_axi_AXILiteS_BREADY'
+
+-Upgrade has added port 's_axi_AXILiteS_BRESP'
+
+-Upgrade has added port 's_axi_AXILiteS_BVALID'
+
+-Upgrade has added port 's_axi_AXILiteS_RDATA'
+
+-Upgrade has added port 's_axi_AXILiteS_RREADY'
+
+-Upgrade has added port 's_axi_AXILiteS_RRESP'
+
+-Upgrade has added port 's_axi_AXILiteS_RVALID'
+
+-Upgrade has added port 's_axi_AXILiteS_WDATA'
+
+-Upgrade has added port 's_axi_AXILiteS_WREADY'
+
+-Upgrade has added port 's_axi_AXILiteS_WSTRB'
+
+-Upgrade has added port 's_axi_AXILiteS_WVALID'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Nov 15 09:08:25 2023
+| Host         : gs21-10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_incrust_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_incrust_0_0 (xilinx.com:hls:incrust:1.1 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Nov 15 08:46:08 2023
+| Host         : gs21-10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_incrust_0_0'
+
+1. Summary
+----------
+
+SUCCESS in the conversion of design_1_incrust_0_0 (xilinx.com:hls:incrust:1.1 (Rev. 1)) to Vivado generation flows.
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Oct  4 15:10:04 2023
+| Host         : gs21-10 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_im_load_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the conversion of design_1_im_load_0_0 (xilinx.com:hls:im_load:1.1 (Rev. 1)) to Vivado generation flows.
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_im_load_0_0'.
+
+
+-Upgrade has added interface 'mode_V' (xilinx.com:signal:data:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_im_load_0_0'. These changes may impact your design.
+
+
+-Upgrade has added port 'mode_V'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Feb 23 20:28:42 2022
+| Host         : PC-VINCENT running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z020clg484-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_im_load_0_0'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_im_load_0_0 from xilinx.com:hls:im_load:1.0 (Rev. 2112020837) to xilinx.com:hls:im_load:1.1 (Rev. 1)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_im_load_0_0'.
+
+
+-Upgrade has removed interface 'video'
+
+-Upgrade has added interface 'm_axis_video' (xilinx.com:interface:axis:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_im_load_0_0'. These changes may impact your design.
+
+
+-Upgrade has removed port 'video_TDATA'
+
+-Upgrade has removed port 'video_TLAST'
+
+-Upgrade has removed port 'video_TREADY'
+
+-Upgrade has removed port 'video_TUSER'
+
+-Upgrade has removed port 'video_TVALID'
+
+-Upgrade has added port 'm_axis_video_TDATA'
+
+-Upgrade has added port 'm_axis_video_TDEST'
+
+-Upgrade has added port 'm_axis_video_TID'
+
+-Upgrade has added port 'm_axis_video_TKEEP'
+
+-Upgrade has added port 'm_axis_video_TLAST'
+
+-Upgrade has added port 'm_axis_video_TREADY'
+
+-Upgrade has added port 'm_axis_video_TSTRB'
+
+-Upgrade has added port 'm_axis_video_TUSER'
+
+-Upgrade has added port 'm_axis_video_TVALID'
+
+

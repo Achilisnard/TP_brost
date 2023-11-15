@@ -1,0 +1,19 @@
+    ap_clk : IN STD_LOGIC;      //clock
+    ap_rst : IN STD_LOGIC;	//rst
+    ap_start : IN STD_LOGIC;    //occupé,commence une tache
+    ap_done : OUT STD_LOGIC;    /execution fait
+    ap_idle : OUT STD_LOGIC;	//inactif
+    ap_ready : OUT STD_LOGIC;
+    p_red : OUT STD_LOGIC_VECTOR (7 downto 0);   //sortie rouges
+    p_red_ap_vld : OUT STD_LOGIC;
+    p_red_ap_ack : IN STD_LOGIC;
+    p_green : OUT STD_LOGIC_VECTOR (7 downto 0);//sortie verte
+    p_green_ap_vld : OUT STD_LOGIC;
+    p_green_ap_ack : IN STD_LOGIC;
+    p_blue : OUT STD_LOGIC_VECTOR (7 downto 0);//sortie bleu
+    p_blue_ap_vld : OUT STD_LOGIC;
+    p_blue_ap_ack : IN STD_LOGIC );
+
+
+
+temps d'execution:  615361 ms

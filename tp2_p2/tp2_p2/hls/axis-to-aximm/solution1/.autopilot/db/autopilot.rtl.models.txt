@@ -1,0 +1,4 @@
+axis_to_aximm_membkb
+axis_to_aximm_gmem_m_axi
+regslice_core
+axis_to_aximm

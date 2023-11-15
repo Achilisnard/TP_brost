@@ -1,0 +1,367 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Oct  3 14:17:56 2023
+# Process ID: 2824
+# Current directory: C:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1
+# Command line: vivado.exe -log bd_0_hls_inst_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_0_hls_inst_0.tcl
+# Log file: C:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.vds
+# Journal file: C:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source bd_0_hls_inst_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.cache/ip 
+Command: synth_design -top bd_0_hls_inst_0 -part xc7z020clg484-1 -directive sdx_optimization_effort_high -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6244 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 869.594 ; gain = 233.695
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'bd_0_hls_inst_0' [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.vhd:76]
+INFO: [Synth 8-3491] module 'mire' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/mire.vhd:12' bound to instance 'U0' of component 'mire' [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'mire' [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/mire.vhd:32]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/mire.vhd:61]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/mire.vhd:64]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/mire.vhd:67]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/mire.vhd:70]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/mire.vhd:76]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_forward' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/regslice_core.vhd:139' bound to instance 'regslice_forward_p_red_U' of component 'regslice_forward' [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/mire.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'regslice_forward' [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/regslice_core.vhd:154]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter W bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'obuf' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/regslice_core.vhd:620' bound to instance 'obuf_inst' of component 'obuf' [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/regslice_core.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_obuf' [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/regslice_core.vhd:632]
+	Parameter W bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_obuf' (1#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/regslice_core.vhd:632]
+INFO: [Synth 8-256] done synthesizing module 'regslice_forward' (2#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/regslice_core.vhd:154]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_forward' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/regslice_core.vhd:139' bound to instance 'regslice_forward_p_green_U' of component 'regslice_forward' [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/mire.vhd:140]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_forward' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/regslice_core.vhd:139' bound to instance 'regslice_forward_p_blue_U' of component 'regslice_forward' [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/mire.vhd:154]
+INFO: [Synth 8-256] done synthesizing module 'mire' (3#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ipshared/aaef/hdl/vhdl/mire.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'bd_0_hls_inst_0' (4#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/synth/bd_0_hls_inst_0.vhd:76]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 944.383 ; gain = 308.484
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 944.383 ; gain = 308.484
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 944.383 ; gain = 308.484
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 944.383 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/mire_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.srcs/sources_1/bd/bd_0/ip/bd_0_hls_inst_0/constraints/mire_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1039.359 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1050.629 ; gain = 11.270
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1050.629 ; gain = 414.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1050.629 ; gain = 414.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1050.629 ; gain = 414.730
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1050.629 ; gain = 414.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module xil_defaultlib_obuf 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module mire 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_blue_U/obuf_inst/odata_int_reg[0]' (FDRE) to 'U0/regslice_forward_p_blue_U/obuf_inst/odata_int_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_blue_U/obuf_inst/odata_int_reg[1]' (FDRE) to 'U0/regslice_forward_p_blue_U/obuf_inst/odata_int_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_blue_U/obuf_inst/odata_int_reg[2]' (FDRE) to 'U0/regslice_forward_p_blue_U/obuf_inst/odata_int_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_blue_U/obuf_inst/odata_int_reg[3]' (FDRE) to 'U0/regslice_forward_p_blue_U/obuf_inst/odata_int_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_blue_U/obuf_inst/odata_int_reg[4]' (FDRE) to 'U0/regslice_forward_p_blue_U/obuf_inst/odata_int_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_blue_U/obuf_inst/odata_int_reg[5]' (FDRE) to 'U0/regslice_forward_p_blue_U/obuf_inst/odata_int_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_blue_U/obuf_inst/odata_int_reg[6]' (FDRE) to 'U0/regslice_forward_p_blue_U/obuf_inst/odata_int_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_green_U/obuf_inst/odata_int_reg[0]' (FDRE) to 'U0/regslice_forward_p_green_U/obuf_inst/odata_int_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_green_U/obuf_inst/odata_int_reg[1]' (FDRE) to 'U0/regslice_forward_p_green_U/obuf_inst/odata_int_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_green_U/obuf_inst/odata_int_reg[2]' (FDRE) to 'U0/regslice_forward_p_green_U/obuf_inst/odata_int_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_green_U/obuf_inst/odata_int_reg[3]' (FDRE) to 'U0/regslice_forward_p_green_U/obuf_inst/odata_int_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_green_U/obuf_inst/odata_int_reg[4]' (FDRE) to 'U0/regslice_forward_p_green_U/obuf_inst/odata_int_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_green_U/obuf_inst/odata_int_reg[5]' (FDRE) to 'U0/regslice_forward_p_green_U/obuf_inst/odata_int_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_green_U/obuf_inst/odata_int_reg[6]' (FDRE) to 'U0/regslice_forward_p_green_U/obuf_inst/odata_int_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_red_U/obuf_inst/odata_int_reg[0]' (FDRE) to 'U0/regslice_forward_p_red_U/obuf_inst/odata_int_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_red_U/obuf_inst/odata_int_reg[1]' (FDRE) to 'U0/regslice_forward_p_red_U/obuf_inst/odata_int_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_red_U/obuf_inst/odata_int_reg[2]' (FDRE) to 'U0/regslice_forward_p_red_U/obuf_inst/odata_int_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_red_U/obuf_inst/odata_int_reg[3]' (FDRE) to 'U0/regslice_forward_p_red_U/obuf_inst/odata_int_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_red_U/obuf_inst/odata_int_reg[4]' (FDRE) to 'U0/regslice_forward_p_red_U/obuf_inst/odata_int_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_red_U/obuf_inst/odata_int_reg[5]' (FDRE) to 'U0/regslice_forward_p_red_U/obuf_inst/odata_int_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/regslice_forward_p_red_U/obuf_inst/odata_int_reg[6]' (FDRE) to 'U0/regslice_forward_p_red_U/obuf_inst/odata_int_reg[7]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:22 . Memory (MB): peak = 1050.629 ; gain = 414.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1050.629 ; gain = 414.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1050.629 ; gain = 414.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1050.629 ; gain = 414.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1050.629 ; gain = 414.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1050.629 ; gain = 414.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1050.629 ; gain = 414.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1050.629 ; gain = 414.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1050.629 ; gain = 414.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1050.629 ; gain = 414.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     2|
+|2     |LUT2 |     5|
+|3     |LUT3 |    10|
+|4     |LUT4 |    11|
+|5     |LUT5 |    16|
+|6     |LUT6 |    11|
+|7     |FDRE |    47|
+|8     |FDSE |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+-------------------------------+----------------------+------+
+|      |Instance                       |Module                |Cells |
++------+-------------------------------+----------------------+------+
+|1     |top                            |                      |   103|
+|2     |  U0                           |mire                  |   103|
+|3     |    regslice_forward_p_blue_U  |regslice_forward      |     8|
+|4     |      obuf_inst                |xil_defaultlib_obuf_3 |     8|
+|5     |    regslice_forward_p_green_U |regslice_forward_0    |    16|
+|6     |      obuf_inst                |xil_defaultlib_obuf_2 |    16|
+|7     |    regslice_forward_p_red_U   |regslice_forward_1    |     9|
+|8     |      obuf_inst                |xil_defaultlib_obuf   |     9|
++------+-------------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1050.629 ; gain = 414.730
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:35 . Memory (MB): peak = 1050.629 ; gain = 308.484
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1050.629 ; gain = 414.730
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1050.629 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1059.203 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+52 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1059.203 ; gain = 725.500
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1059.203 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_0_hls_inst_0, cache-ID = 4a36ff831c95a3c5
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1059.203 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1/impl/vhdl/project.runs/bd_0_hls_inst_0_synth_1/bd_0_hls_inst_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_0_hls_inst_0_utilization_synth.rpt -pb bd_0_hls_inst_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  3 14:18:50 2023...

@@ -1,0 +1,194 @@
+
+
+================================================================
+== Vivado HLS Report for 'mire'
+================================================================
+* Date:           Wed Feb 23 16:31:26 2022
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        mire
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 8.510 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        ?|        ?|         ?|         ?|    ?|    ?|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |        ?|        ?|         3|          1|          1|     ?|    yes   |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 3
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 3, States = { 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 5 3 
+3 --> 4 
+4 --> 2 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 8.51>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %mode_V), !map !36"   --->   Operation 6 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %m_axis_video_V_data_V), !map !42"   --->   Operation 7 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %m_axis_video_V_keep_V), !map !46"   --->   Operation 8 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %m_axis_video_V_strb_V), !map !50"   --->   Operation 9 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %m_axis_video_V_user_V), !map !54"   --->   Operation 10 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %m_axis_video_V_last_V), !map !58"   --->   Operation 11 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %m_axis_video_V_id_V), !map !62"   --->   Operation 12 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %m_axis_video_V_dest_V), !map !66"   --->   Operation 13 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %hsize_in), !map !70"   --->   Operation 14 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %vsize_in), !map !74"   --->   Operation 15 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([5 x i8]* @mire_str) nounwind"   --->   Operation 16 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%vsize_in_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %vsize_in)"   --->   Operation 17 'read' 'vsize_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%hsize_in_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %hsize_in)"   --->   Operation 18 'read' 'hsize_in_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %m_axis_video_V_data_V, i1* %m_axis_video_V_keep_V, i1* %m_axis_video_V_strb_V, i1* %m_axis_video_V_user_V, i1* %m_axis_video_V_last_V, i1* %m_axis_video_V_id_V, i1* %m_axis_video_V_dest_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [mire/mire.cpp:8]   --->   Operation 19 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (2.55ns)   --->   "%add_ln22 = add nsw i32 %hsize_in_read, -1" [mire/mire.cpp:22]   --->   Operation 20 'add' 'add_ln22' <Predicate = true> <Delay = 2.55> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%cast = zext i32 %vsize_in_read to i64"   --->   Operation 21 'zext' 'cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%cast1 = zext i32 %hsize_in_read to i64"   --->   Operation 22 'zext' 'cast1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (8.51ns)   --->   "%bound = mul i64 %cast1, %cast"   --->   Operation 23 'mul' 'bound' <Predicate = true> <Delay = 8.51> <Core = "Mul">   --->   Core 16 'Mul' <Latency = 0> <II = 1> <Delay = 8.51> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 24 [1/1] (1.76ns)   --->   "br label %1" [mire/mire.cpp:12]   --->   Operation 24 'br' <Predicate = true> <Delay = 1.76>
+
+State 2 <SV = 1> <Delay = 5.72>
+ST_2 : Operation 25 [1/1] (0.00ns)   --->   "%indvar_flatten = phi i64 [ 0, %0 ], [ %add_ln12, %.reset ]" [mire/mire.cpp:12]   --->   Operation 25 'phi' 'indvar_flatten' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%i_0 = phi i31 [ 0, %0 ], [ %select_ln12_1, %.reset ]" [mire/mire.cpp:12]   --->   Operation 26 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%j_0 = phi i31 [ 0, %0 ], [ %j, %.reset ]"   --->   Operation 27 'phi' 'j_0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [mire/mire.cpp:14]   --->   Operation 28 'specpipeline' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%zext_ln15 = zext i31 %j_0 to i32" [mire/mire.cpp:15]   --->   Operation 29 'zext' 'zext_ln15' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (2.47ns)   --->   "%icmp_ln15 = icmp slt i32 %zext_ln15, %hsize_in_read" [mire/mire.cpp:15]   --->   Operation 30 'icmp' 'icmp_ln15' <Predicate = true> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 31 [1/1] (2.77ns)   --->   "%icmp_ln12 = icmp eq i64 %indvar_flatten, %bound" [mire/mire.cpp:12]   --->   Operation 31 'icmp' 'icmp_ln12' <Predicate = true> <Delay = 2.77> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 32 [1/1] (3.52ns)   --->   "%add_ln12 = add i64 %indvar_flatten, 1" [mire/mire.cpp:12]   --->   Operation 32 'add' 'add_ln12' <Predicate = true> <Delay = 3.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "br i1 %icmp_ln12, label %2, label %.reset" [mire/mire.cpp:12]   --->   Operation 33 'br' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.73ns)   --->   "%select_ln12 = select i1 %icmp_ln15, i31 %j_0, i31 0" [mire/mire.cpp:12]   --->   Operation 34 'select' 'select_ln12' <Predicate = (!icmp_ln12)> <Delay = 0.73> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (2.52ns)   --->   "%add_ln12_1 = add i31 1, %i_0" [mire/mire.cpp:12]   --->   Operation 35 'add' 'add_ln12_1' <Predicate = (!icmp_ln12)> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 36 [1/1] (0.73ns)   --->   "%select_ln12_1 = select i1 %icmp_ln15, i31 %i_0, i31 %add_ln12_1" [mire/mire.cpp:12]   --->   Operation 36 'select' 'select_ln12_1' <Predicate = (!icmp_ln12)> <Delay = 0.73> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 37 [1/1] (0.00ns) (grouped into LUT with out node select_ln31)   --->   "%trunc_ln12 = trunc i31 %select_ln12_1 to i5" [mire/mire.cpp:12]   --->   Operation 37 'trunc' 'trunc_ln12' <Predicate = (!icmp_ln12)> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.00ns)   --->   "%zext_ln12 = zext i31 %select_ln12 to i32" [mire/mire.cpp:12]   --->   Operation 38 'zext' 'zext_ln12' <Predicate = (!icmp_ln12)> <Delay = 0.00>
+ST_2 : Operation 39 [1/1] (0.00ns) (grouped into LUT with out node select_ln31)   --->   "%trunc_ln17 = trunc i31 %select_ln12 to i5" [mire/mire.cpp:17]   --->   Operation 39 'trunc' 'trunc_ln17' <Predicate = (!icmp_ln12)> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.00ns) (grouped into LUT with out node tmp_user_V)   --->   "%or_ln17 = or i31 %select_ln12, %select_ln12_1" [mire/mire.cpp:17]   --->   Operation 40 'or' 'or_ln17' <Predicate = (!icmp_ln12)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 41 [1/1] (0.00ns) (grouped into LUT with out node select_ln31)   --->   "%or_ln17_1 = or i5 %trunc_ln17, %trunc_ln12" [mire/mire.cpp:17]   --->   Operation 41 'or' 'or_ln17_1' <Predicate = (!icmp_ln12)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 42 [1/1] (2.47ns) (out node of the LUT)   --->   "%tmp_user_V = icmp eq i31 %or_ln17, 0" [mire/mire.cpp:17]   --->   Operation 42 'icmp' 'tmp_user_V' <Predicate = (!icmp_ln12)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 43 [1/1] (2.47ns)   --->   "%tmp_last_V = icmp eq i32 %zext_ln12, %add_ln22" [mire/mire.cpp:22]   --->   Operation 43 'icmp' 'tmp_last_V' <Predicate = (!icmp_ln12)> <Delay = 2.47> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 2.47> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 44 [1/1] (0.00ns) (grouped into LUT with out node select_ln31)   --->   "%tmp = call i1 @_ssdm_op_BitSelect.i1.i5.i32(i5 %or_ln17_1, i32 4)" [mire/mire.cpp:31]   --->   Operation 44 'bitselect' 'tmp' <Predicate = (!icmp_ln12)> <Delay = 0.00>
+ST_2 : Operation 45 [1/1] (0.00ns) (grouped into LUT with out node select_ln31)   --->   "%tmp_data_V = xor i1 %tmp, true" [mire/mire.cpp:31]   --->   Operation 45 'xor' 'tmp_data_V' <Predicate = (!icmp_ln12)> <Delay = 0.00> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 46 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln31 = select i1 %tmp_data_V, i8 -1, i8 0" [mire/mire.cpp:31]   --->   Operation 46 'select' 'select_ln31' <Predicate = (!icmp_ln12)> <Delay = 0.99> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_2 : Operation 47 [1/1] (2.52ns)   --->   "%j = add i31 1, %select_ln12" [mire/mire.cpp:15]   --->   Operation 47 'add' 'j' <Predicate = (!icmp_ln12)> <Delay = 2.52> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 48 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P.i1P.i1P.i1P.i1P.i1P.i1P(i8* %m_axis_video_V_data_V, i1* %m_axis_video_V_keep_V, i1* %m_axis_video_V_strb_V, i1* %m_axis_video_V_user_V, i1* %m_axis_video_V_last_V, i1* %m_axis_video_V_id_V, i1* %m_axis_video_V_dest_V, i8 %select_ln31, i1 undef, i1 undef, i1 %tmp_user_V, i1 %tmp_last_V, i1 undef, i1 undef)" [mire/mire.cpp:36]   --->   Operation 48 'write' <Predicate = (!icmp_ln12)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 49 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [mire/mire.cpp:14]   --->   Operation 49 'specpipeline' <Predicate = (!icmp_ln12)> <Delay = 0.00>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecPipeline(i32 -1, i32 1, i32 1, i32 0, [1 x i8]* @p_str2) nounwind" [mire/mire.cpp:14]   --->   Operation 50 'specpipeline' <Predicate = (!icmp_ln12)> <Delay = 0.00>
+ST_4 : Operation 51 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P.i1P.i1P.i1P.i1P.i1P.i1P(i8* %m_axis_video_V_data_V, i1* %m_axis_video_V_keep_V, i1* %m_axis_video_V_strb_V, i1* %m_axis_video_V_user_V, i1* %m_axis_video_V_last_V, i1* %m_axis_video_V_id_V, i1* %m_axis_video_V_dest_V, i8 %select_ln31, i1 undef, i1 undef, i1 %tmp_user_V, i1 %tmp_last_V, i1 undef, i1 undef)" [mire/mire.cpp:36]   --->   Operation 51 'write' <Predicate = (!icmp_ln12)> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "br label %1" [mire/mire.cpp:15]   --->   Operation 52 'br' <Predicate = (!icmp_ln12)> <Delay = 0.00>
+
+State 5 <SV = 2> <Delay = 0.00>
+ST_5 : Operation 53 [1/1] (0.00ns)   --->   "ret void" [mire/mire.cpp:40]   --->   Operation 53 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 8.51ns
+The critical path consists of the following:
+	wire read on port 'vsize_in' [22]  (0 ns)
+	'mul' operation ('bound') [28]  (8.51 ns)
+
+ <State 2>: 5.73ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', mire/mire.cpp:15) [33]  (0 ns)
+	'icmp' operation ('icmp_ln15', mire/mire.cpp:15) [36]  (2.47 ns)
+	'select' operation ('select_ln12', mire/mire.cpp:12) [42]  (0.733 ns)
+	'add' operation ('j', mire/mire.cpp:15) [57]  (2.52 ns)
+
+ <State 3>: 0ns
+The critical path consists of the following:
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

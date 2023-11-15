@@ -1,0 +1,49 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'sobel'" level="0">
+<item name = "Date">Tue Feb 22 14:12:57 2022
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">sobel</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 8.625 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">158, 313472, 1.580 us, 3.135 ms, 156, 313470, dataflow</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_Sobel_1_fu_248">Sobel_1, 155, 313469, 1.550 us, 3.135 ms, 155, 313469, none</column>
+<column name="grp_Mat2AXIvideo_fu_256">Mat2AXIvideo, 1, 309121, 10.000 ns, 3.091 ms, 1, 309121, none</column>
+<column name="grp_AXIvideo2Mat_fu_277">AXIvideo2Mat, 3, 309603, 30.000 ns, 3.096 ms, 3, 309603, none</column>
+<column name="call_ln0_Block_Mat_exit45_pro_fu_300">Block_Mat_exit45_pro, 0, 0, 0 ns, 0 ns, 0, 0, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

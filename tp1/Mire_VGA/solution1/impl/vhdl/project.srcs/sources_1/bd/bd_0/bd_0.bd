@@ -1,0 +1,197 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x1D3660242F611089",
+      "device": "xc7z020clg484-1",
+      "name": "bd_0",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "hls_inst": ""
+    },
+    "interface_ports": {
+      "ap_ctrl": {
+        "mode": "Slave",
+        "vlnv": "xilinx.com:interface:acc_handshake_rtl:1.0"
+      }
+    },
+    "ports": {
+      "ap_clk": {
+        "type": "clk",
+        "direction": "I",
+        "parameters": {
+          "ASSOCIATED_RESET": {
+            "value": "ap_rst",
+            "value_src": "default"
+          },
+          "CLK_DOMAIN": {
+            "value": "bd_0_ap_clk_0",
+            "value_src": "default"
+          },
+          "FREQ_HZ": {
+            "value": "100000000.0"
+          },
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "PHASE": {
+            "value": "0.000",
+            "value_src": "default"
+          }
+        }
+      },
+      "ap_rst": {
+        "type": "rst",
+        "direction": "I",
+        "parameters": {
+          "INSERT_VIP": {
+            "value": "0",
+            "value_src": "default"
+          },
+          "POLARITY": {
+            "value": "ACTIVE_HIGH"
+          }
+        }
+      },
+      "p_blue": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "p_blue_ap_ack": {
+        "direction": "I"
+      },
+      "p_blue_ap_vld": {
+        "direction": "O"
+      },
+      "p_green": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "p_green_ap_ack": {
+        "direction": "I"
+      },
+      "p_green_ap_vld": {
+        "direction": "O"
+      },
+      "p_red": {
+        "type": "data",
+        "direction": "O",
+        "left": "7",
+        "right": "0",
+        "parameters": {
+          "LAYERED_METADATA": {
+            "value": "undef",
+            "value_src": "default"
+          }
+        }
+      },
+      "p_red_ap_ack": {
+        "direction": "I"
+      },
+      "p_red_ap_vld": {
+        "direction": "O"
+      }
+    },
+    "components": {
+      "hls_inst": {
+        "vlnv": "xilinx.com:hls:mire:1.1",
+        "xci_name": "bd_0_hls_inst_0"
+      }
+    },
+    "interface_nets": {
+      "ap_ctrl_0_1": {
+        "interface_ports": [
+          "ap_ctrl",
+          "hls_inst/ap_ctrl"
+        ]
+      }
+    },
+    "nets": {
+      "ap_clk_0_1": {
+        "ports": [
+          "ap_clk",
+          "hls_inst/ap_clk"
+        ]
+      },
+      "ap_rst_0_1": {
+        "ports": [
+          "ap_rst",
+          "hls_inst/ap_rst"
+        ]
+      },
+      "hls_inst_p_blue": {
+        "ports": [
+          "hls_inst/p_blue",
+          "p_blue"
+        ]
+      },
+      "p_blue_ap_ack_0_1": {
+        "ports": [
+          "p_blue_ap_ack",
+          "hls_inst/p_blue_ap_ack"
+        ]
+      },
+      "hls_inst_p_blue_ap_vld": {
+        "ports": [
+          "hls_inst/p_blue_ap_vld",
+          "p_blue_ap_vld"
+        ]
+      },
+      "hls_inst_p_green": {
+        "ports": [
+          "hls_inst/p_green",
+          "p_green"
+        ]
+      },
+      "p_green_ap_ack_0_1": {
+        "ports": [
+          "p_green_ap_ack",
+          "hls_inst/p_green_ap_ack"
+        ]
+      },
+      "hls_inst_p_green_ap_vld": {
+        "ports": [
+          "hls_inst/p_green_ap_vld",
+          "p_green_ap_vld"
+        ]
+      },
+      "hls_inst_p_red": {
+        "ports": [
+          "hls_inst/p_red",
+          "p_red"
+        ]
+      },
+      "p_red_ap_ack_0_1": {
+        "ports": [
+          "p_red_ap_ack",
+          "hls_inst/p_red_ap_ack"
+        ]
+      },
+      "hls_inst_p_red_ap_vld": {
+        "ports": [
+          "hls_inst/p_red_ap_vld",
+          "p_red_ap_vld"
+        ]
+      }
+    }
+  }
+}

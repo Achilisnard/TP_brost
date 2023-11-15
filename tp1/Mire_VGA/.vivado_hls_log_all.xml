@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <packageLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <packageLog>
+        <logs message="WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port &quot;ap_clk&quot; is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew&#xD;&#xA;Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design" projectName="Mire_VGA" solutionName="solution1" date="2023-10-03T14:21:21.209+0200" type="Warning"/>
+        <logs message="WARNING: [Timing 38-242] The property HD.CLK_SRC of clock port &quot;ap_clk&quot; is not set. In out-of-context mode, this prevents timing estimation for clock delay/skew&#xD;&#xA;Resolution: Set the HD.CLK_SRC property of the out-of-context port to the location of the clock buffer instance in the top-level design" projectName="Mire_VGA" solutionName="solution1" date="2023-10-03T14:21:19.514+0200" type="Warning"/>
+        <logs message="WARNING: [Route 35-198] Port &quot;ap_ctrl_start&quot; does not have an associated HD.PARTPIN_LOCS, which will prevent the partial routing of the signal &quot;ap_ctrl_start&quot;. Without this partial route, timing analysis to/from this port will not be accurate, and no routing information for this port can be exported.&#xD;&#xA;Phase 1 Build RT Design | Checksum: 193532b80&#xD;&#xA;&#xD;&#xA;Time (s): cpu = 00:00:33 ; elapsed = 00:00:30 . Memory (MB): peak = 1671.137 ; gain = 98.023&#xD;&#xA;Post Restoration Checksum: NetGraph: a51d5703 NumContArr: ee35d47d Constraints: 0 Timing: 0&#xD;&#xA;&#xD;&#xA;Phase 2 Router Initialization&#xD;&#xA;&#xD;&#xA;Phase 2.1 Create Timer&#xD;&#xA;Phase 2.1 Create Timer | Checksum: 193532b80&#xD;&#xA;&#xD;&#xA;Time (s): cpu = 00:00:33 ; elapsed = 00:00:30 . Memory (MB): peak = 1693.941 ; gain = 120.828&#xD;&#xA;&#xD;&#xA;Phase 2.2 Fix Topology Constraints&#xD;&#xA;Phase 2.2 Fix Topology Constraints | Checksum: 193532b80&#xD;&#xA;&#xD;&#xA;Time (s): cpu = 00:00:33 ; elapsed = 00:00:30 . Memory (MB): peak = 1693.941 ; gain = 120.828&#xD;&#xA;&#xD;&#xA;Phase 2.3 Pre Route Cleanup&#xD;&#xA;Phase 2.3 Pre Route Cleanup | Checksum: 193532b80&#xD;&#xA;&#xD;&#xA;Time (s): cpu = 00:00:33 ; elapsed = 00:00:30 . Memory (MB): peak = 1693.941 ; gain = 120.828&#xD;&#xA; Number of Nodes with overlaps = 0&#xD;&#xA;&#xD;&#xA;Phase 2.4 Update Timing&#xD;&#xA;Phase 2.4 Update Timing | Checksum: f979fefb&#xD;&#xA;&#xD;&#xA;Time (s): cpu = 00:00:33 ; elapsed = 00:00:31 . Memory (MB): peak = 1693.941 ; gain = 120.828" projectName="Mire_VGA" solutionName="solution1" date="2023-10-03T14:21:14.482+0200" type="Warning"/>
+      </packageLog>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

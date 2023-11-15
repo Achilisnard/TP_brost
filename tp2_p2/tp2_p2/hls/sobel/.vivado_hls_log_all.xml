@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'Sobel.1' to 'Sobel_1'." projectName="sobel" solutionName="solution1" date="2022-02-22T14:12:54.984+0100" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'Block_Mat.exit45_pro' to 'Block_Mat_exit45_pro'." projectName="sobel" solutionName="solution1" date="2022-02-22T14:12:54.963+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf[0].val[5]' (C:/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_imgproc.h:400)." projectName="sobel" solutionName="solution1" date="2022-02-22T14:12:54.386+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf[0].val[4]' (C:/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_imgproc.h:400)." projectName="sobel" solutionName="solution1" date="2022-02-22T14:12:54.228+0100" type="Warning"/>
+        <logs message="WARNING: [ANALYSIS 214-52] Found false inter dependency for variable 'k_buf[0].val[3]' (C:/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_imgproc.h:400)." projectName="sobel" solutionName="solution1" date="2022-02-22T14:12:54.220+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'Block_Mat.exit45_proc' to 'Block_Mat.exit45_pro' (sobel/sobel.cpp:26)" projectName="sobel" solutionName="solution1" date="2022-02-22T14:12:54.210+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::AXIvideo2Mat&lt;8, 480, 640, 0>' to 'AXIvideo2Mat' (C:/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:63:9)" projectName="sobel" solutionName="solution1" date="2022-02-22T14:12:54.060+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Filter2D&lt;hls::BORDER_DEFAULT, 0, 0, ap_int&lt;8>, int, 480, 640, 3, 3>' to 'Filter2D' (C:/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_imgproc.h:118:33)" projectName="sobel" solutionName="solution1" date="2022-02-22T14:12:54.051+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Mat2AXIvideo&lt;8, 480, 640, 0>' to 'Mat2AXIvideo' (C:/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_io.h:120:50)" projectName="sobel" solutionName="solution1" date="2022-02-22T14:12:54.043+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hls::Sobel&lt;1, 0, 3, 0, 0, 480, 640, 480, 640>' to 'Sobel.1' (C:/Xilinx/Vivado/2019.2/common/technology/autopilot/hls/hls_video_imgproc.h:2619:5)" projectName="sobel" solutionName="solution1" date="2022-02-22T14:12:54.033+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'img_0.data_stream.V' (sobel/sobel.cpp:26)." projectName="sobel" solutionName="solution1" date="2022-02-22T14:12:51.817+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="mire.c" path="C:\Users\ai770741\Documents\TP_Brost\tp1\Mire_VGA\src\mire.c"/>
+  </source>
+  <testbench>
+    <originFiles name="mire_tb.c" path="C:\Users\ai770741\Documents\TP_Brost\tp1\Mire_VGA\src\mire_tb.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

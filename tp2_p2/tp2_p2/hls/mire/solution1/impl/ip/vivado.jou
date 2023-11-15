@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Feb 23 16:32:48 2022
+# Process ID: 25364
+# Current directory: C:/formation_hls/video_vga_7511_zed/hls/mire/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: C:/formation_hls/video_vga_7511_zed/hls/mire/solution1/impl/ip/vivado.log
+# Journal file: C:/formation_hls/video_vga_7511_zed/hls/mire/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Port 'video_crop/s_axis_video_TDEST' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="video_crop" solutionName="solution1" date="2022-02-18T21:43:43.619+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'video_crop/s_axis_video_TID' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="video_crop" solutionName="solution1" date="2022-02-18T21:43:43.608+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'video_crop/s_axis_video_TLAST' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="video_crop" solutionName="solution1" date="2022-02-18T21:43:43.592+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'video_crop/s_axis_video_TUSER' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="video_crop" solutionName="solution1" date="2022-02-18T21:43:43.577+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'video_crop/s_axis_video_TSTRB' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="video_crop" solutionName="solution1" date="2022-02-18T21:43:43.563+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'video_crop/s_axis_video_TKEEP' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="video_crop" solutionName="solution1" date="2022-02-18T21:43:43.548+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'video_crop/s_axis_video_TREADY' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="video_crop" solutionName="solution1" date="2022-02-18T21:43:43.536+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'video_crop/s_axis_video_TVALID' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="video_crop" solutionName="solution1" date="2022-02-18T21:43:43.526+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'video_crop/s_axis_video_TDATA' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="video_crop" solutionName="solution1" date="2022-02-18T21:43:43.513+0100" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Port 'video_crop/mode_V' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="video_crop" solutionName="solution1" date="2022-02-18T21:43:43.502+0100" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1.1' (video_crop/video_crop.cpp:16) in function 'video_crop': cannot completely unroll a loop with a variable trip count." projectName="video_crop" solutionName="solution1" date="2022-02-18T21:43:42.820+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="mire.wdb" id="1">
+         <top_modules>
+            <top_module name="apatb_mire_top" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+   </zoom_setting>
+   <column_width_setting>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wvobject fp_name="group1" type="group">
+      <obj_property name="label">Design Top Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group2" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group3" type="group">
+            <obj_property name="label">m_axis_video(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/m_axis_video_TDEST" type="array">
+               <obj_property name="ElementShortName">m_axis_video_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/m_axis_video_TID" type="array">
+               <obj_property name="ElementShortName">m_axis_video_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/m_axis_video_TLAST" type="array">
+               <obj_property name="ElementShortName">m_axis_video_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/m_axis_video_TUSER" type="array">
+               <obj_property name="ElementShortName">m_axis_video_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TUSER[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/m_axis_video_TSTRB" type="array">
+               <obj_property name="ElementShortName">m_axis_video_TSTRB[0:0]</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TSTRB[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/m_axis_video_TKEEP" type="array">
+               <obj_property name="ElementShortName">m_axis_video_TKEEP[0:0]</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TKEEP[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/m_axis_video_TREADY" type="logic">
+               <obj_property name="ElementShortName">m_axis_video_TREADY</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/m_axis_video_TVALID" type="logic">
+               <obj_property name="ElementShortName">m_axis_video_TVALID</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/m_axis_video_TDATA" type="array">
+               <obj_property name="ElementShortName">m_axis_video_TDATA[7:0]</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TDATA[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group13" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group14" type="group">
+            <obj_property name="label">vsize_in(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/vsize_in" type="array">
+               <obj_property name="ElementShortName">vsize_in[31:0]</obj_property>
+               <obj_property name="ObjectShortName">vsize_in[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group16" type="group">
+            <obj_property name="label">hsize_in(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/hsize_in" type="array">
+               <obj_property name="ElementShortName">hsize_in[31:0]</obj_property>
+               <obj_property name="ObjectShortName">hsize_in[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group18" type="group">
+            <obj_property name="label">mode(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/mode_V" type="array">
+               <obj_property name="ElementShortName">mode_V[0:0]</obj_property>
+               <obj_property name="ObjectShortName">mode_V[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group20" type="group">
+         <obj_property name="label">Block-level IO Handshake</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/ap_start" type="logic">
+            <obj_property name="ElementShortName">ap_start</obj_property>
+            <obj_property name="ObjectShortName">ap_start</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/ap_done" type="logic">
+            <obj_property name="ElementShortName">ap_done</obj_property>
+            <obj_property name="ObjectShortName">ap_done</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/ap_idle" type="logic">
+            <obj_property name="ElementShortName">ap_idle</obj_property>
+            <obj_property name="ObjectShortName">ap_idle</obj_property>
+         </wvobject>
+         <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/ap_ready" type="logic">
+            <obj_property name="ElementShortName">ap_ready</obj_property>
+            <obj_property name="ObjectShortName">ap_ready</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group25" type="group">
+         <obj_property name="label">Reset</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/ap_rst_n" type="logic">
+            <obj_property name="ElementShortName">ap_rst_n</obj_property>
+            <obj_property name="ObjectShortName">ap_rst_n</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group27" type="group">
+         <obj_property name="label">Clock</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="/apatb_mire_top/AESL_inst_mire/ap_clk" type="logic">
+            <obj_property name="ElementShortName">ap_clk</obj_property>
+            <obj_property name="ObjectShortName">ap_clk</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group29" type="group">
+      <obj_property name="label">Test Bench Signals</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="group30" type="group">
+         <obj_property name="label">Internal Signals</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group31" type="group">
+            <obj_property name="label">Simulation Status</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_mire_top/AUTOTB_TRANSACTION_NUM" type="other">
+               <obj_property name="ElementShortName">AUTOTB_TRANSACTION_NUM</obj_property>
+               <obj_property name="ObjectShortName">AUTOTB_TRANSACTION_NUM</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/ready_cnt" type="array">
+               <obj_property name="ElementShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">ready_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/done_cnt" type="array">
+               <obj_property name="ElementShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="ObjectShortName">done_cnt[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group32" type="group">
+            <obj_property name="label">Port Depth</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_mire_top/LENGTH_mode_V" type="other">
+               <obj_property name="ElementShortName">LENGTH_mode_V</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_mode_V</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/LENGTH_m_axis_video_V_data_V" type="other">
+               <obj_property name="ElementShortName">LENGTH_m_axis_video_V_data_V</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_m_axis_video_V_data_V</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/LENGTH_m_axis_video_V_keep_V" type="other">
+               <obj_property name="ElementShortName">LENGTH_m_axis_video_V_keep_V</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_m_axis_video_V_keep_V</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/LENGTH_m_axis_video_V_strb_V" type="other">
+               <obj_property name="ElementShortName">LENGTH_m_axis_video_V_strb_V</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_m_axis_video_V_strb_V</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/LENGTH_m_axis_video_V_user_V" type="other">
+               <obj_property name="ElementShortName">LENGTH_m_axis_video_V_user_V</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_m_axis_video_V_user_V</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/LENGTH_m_axis_video_V_last_V" type="other">
+               <obj_property name="ElementShortName">LENGTH_m_axis_video_V_last_V</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_m_axis_video_V_last_V</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/LENGTH_m_axis_video_V_id_V" type="other">
+               <obj_property name="ElementShortName">LENGTH_m_axis_video_V_id_V</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_m_axis_video_V_id_V</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/LENGTH_m_axis_video_V_dest_V" type="other">
+               <obj_property name="ElementShortName">LENGTH_m_axis_video_V_dest_V</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_m_axis_video_V_dest_V</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/LENGTH_hsize_in" type="other">
+               <obj_property name="ElementShortName">LENGTH_hsize_in</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_hsize_in</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/LENGTH_vsize_in" type="other">
+               <obj_property name="ElementShortName">LENGTH_vsize_in</obj_property>
+               <obj_property name="ObjectShortName">LENGTH_vsize_in</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group46" type="group">
+         <obj_property name="label">C Outputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group47" type="group">
+            <obj_property name="label">m_axis_video(axis)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_mire_top/m_axis_video_TDEST" type="array">
+               <obj_property name="ElementShortName">m_axis_video_TDEST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TDEST[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/m_axis_video_TID" type="array">
+               <obj_property name="ElementShortName">m_axis_video_TID[0:0]</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TID[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/m_axis_video_TLAST" type="array">
+               <obj_property name="ElementShortName">m_axis_video_TLAST[0:0]</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TLAST[0:0]</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/m_axis_video_TUSER" type="array">
+               <obj_property name="ElementShortName">m_axis_video_TUSER[0:0]</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TUSER[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/m_axis_video_TSTRB" type="array">
+               <obj_property name="ElementShortName">m_axis_video_TSTRB[0:0]</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TSTRB[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/m_axis_video_TKEEP" type="array">
+               <obj_property name="ElementShortName">m_axis_video_TKEEP[0:0]</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TKEEP[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/m_axis_video_TREADY" type="logic">
+               <obj_property name="ElementShortName">m_axis_video_TREADY</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TREADY</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/m_axis_video_TVALID" type="logic">
+               <obj_property name="ElementShortName">m_axis_video_TVALID</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TVALID</obj_property>
+               <obj_property name="CustomSignalColor">#ffff00</obj_property>
+               <obj_property name="UseCustomSignalColor">true</obj_property>
+            </wvobject>
+            <wvobject fp_name="/apatb_mire_top/m_axis_video_TDATA" type="array">
+               <obj_property name="ElementShortName">m_axis_video_TDATA[7:0]</obj_property>
+               <obj_property name="ObjectShortName">m_axis_video_TDATA[7:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="group57" type="group">
+         <obj_property name="label">C Inputs</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject fp_name="group58" type="group">
+            <obj_property name="label">vsize_in(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_mire_top/vsize_in" type="array">
+               <obj_property name="ElementShortName">vsize_in[31:0]</obj_property>
+               <obj_property name="ObjectShortName">vsize_in[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group60" type="group">
+            <obj_property name="label">hsize_in(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_mire_top/hsize_in" type="array">
+               <obj_property name="ElementShortName">hsize_in[31:0]</obj_property>
+               <obj_property name="ObjectShortName">hsize_in[31:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+         <wvobject fp_name="group62" type="group">
+            <obj_property name="label">mode(wire)</obj_property>
+            <obj_property name="DisplayName">label</obj_property>
+            <wvobject fp_name="/apatb_mire_top/mode_V" type="array">
+               <obj_property name="ElementShortName">mode_V[0:0]</obj_property>
+               <obj_property name="ObjectShortName">mode_V[0:0]</obj_property>
+               <obj_property name="Radix">HEXRADIX</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>

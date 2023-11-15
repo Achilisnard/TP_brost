@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog>
+        <logs message="ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***&#xD;&#xA;command 'ap_source' returned error code&#xD;&#xA;    while executing&#xD;&#xA;&quot;source C:/formation_hls/video_vga_7511_zed/hls/incrust/solution1/cosim.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main C:/formation_hls/video_vga_7511_zed/hls/incrust/solution1/cosim.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="incrust" solutionName="solution1" date="2022-02-22T18:57:13.548+0100"/>
+        <logs message="ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***" projectName="incrust" solutionName="solution1" date="2022-02-22T18:57:13.321+0100"/>
+        <logs message="ERROR: [COSIM 212-320] C TB testing failed, stop generating test vectors. Please check C TB or re-run cosim." projectName="incrust" solutionName="solution1" date="2022-02-22T18:57:13.307+0100"/>
+        <logs message="ERROR: [COSIM 212-359] Aborting co-simulation: C TB simulation failed, nonzero return value '3'." projectName="incrust" solutionName="solution1" date="2022-02-22T18:57:13.291+0100"/>
+        <logs message="OpenCV Error: Bad argument (Array should be CvMat or IplImage) in cvGetSize, file C:\Users\shaodong\Desktop\opencv-2.4.5\modules\core\src\array.cpp, line 1238&#xD;&#xA;terminate called after throwing an instance of 'cv::Exception'&#xD;&#xA;  what():  C:\Users\shaodong\Desktop\opencv-2.4.5\modules\core\src\array.cpp:1238: error: (-5) Array should be CvMat or IplImage in function cvGetSize&#xD;&#xA;" projectName="incrust" solutionName="solution1" date="2022-02-22T18:57:13.278+0100"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1.1' (incrust/incrust.cpp:16) in function 'incrust': cannot completely unroll a loop with a variable trip count." projectName="incrust" solutionName="solution1" date="2022-02-21T19:14:52.573+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

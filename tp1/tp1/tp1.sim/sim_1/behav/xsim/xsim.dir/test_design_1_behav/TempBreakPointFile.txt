@@ -1,0 +1,3 @@
+Breakpoint File Version 1.0
+89 true C:/projets/esirem/soc/tp1/tp1.srcs/sim_1/new/test.vhd
+115 true C:/projets/esirem/soc/tp1/tp1.srcs/sim_1/new/test.vhd

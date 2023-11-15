@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="im_load.cpp" path="C:\Users\ai770741\Documents\TP_Brost\tp2_p1\tp2_p1\hls\im_load\im_load.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="im_load_tb.cpp" path="C:\Users\ai770741\Documents\TP_Brost\tp2_p1\tp2_p1\hls\im_load\im_load_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

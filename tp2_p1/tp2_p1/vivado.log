@@ -1,0 +1,626 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Nov 15 08:18:42 2023
+# Process ID: 5392
+# Current directory: C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10144 C:\Users\ai770741\Documents\TP_Brost\tp2_p1\tp2_p1\tp2_p1.xpr
+# Log file: C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/vivado.log
+# Journal file: C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/im_load'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/incrust'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:11 . Memory (MB): peak = 755.230 ; gain = 120.258
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:module_ref:i2c_sender_adv7511:1.0 - i2c_sender_adv7511_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_5
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding component instance block -- xilinx.com:hls:im_load:1.1 - im_load_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:hls:incrust:1.1 - incrust_0
+Successfully read diagram <design_1> from BD file <C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 903.496 ; gain = 78.688
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/incrust/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/im_load'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/incrust'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:incrust:1.1 [get_ips  design_1_incrust_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_incrust_0_0 from Incrust 1.1 to Incrust 1.1
+Wrote  : <C:\Users\ai770741\Documents\TP_Brost\tp2_p1\tp2_p1\tp2_p1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_incrust_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+WARNING: [BD 41-927] Following properties on pin /video_ctrl/adv_7511/i2c_sender_adv7511_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : <C:\Users\ai770741\Documents\TP_Brost\tp2_p1\tp2_p1\tp2_p1.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/adv_7511/i2c_sender_adv7511_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/adv_7511/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/adv_7511/xlconstant_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block im_load_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block incrust_0 .
+Exporting to file C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.ip_user_files -ipstatic_source_dir C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.cache/compile_simlib/modelsim} {questa=C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.cache/compile_simlib/questa} {riviera=C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.cache/compile_simlib/riviera} {activehdl=C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Wed Nov 15 08:47:19 2023] Launched synth_1...
+Run output will be captured here: C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.runs/synth_1/runme.log
+[Wed Nov 15 08:47:19 2023] Launched impl_1...
+Run output will be captured here: C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-06:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 1135.883 ; gain = 0.000
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210248553076
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 2365.637 ; gain = 1229.754
+set_property PROGRAM.FILE {C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_1]
+current_hw_device [get_hw_devices xc7z020_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1435] Device xc7z020 (JTAG device index = 1) is not programmed (DONE status = 0).
+set_property PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-1434] Device xc7z020 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+open_bd_design {C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd}
+open_bd_design {C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd}
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/incrust/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/im_load'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/incrust'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:incrust:1.1 [get_ips  design_1_incrust_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_incrust_0_0 from Incrust 1.1 to Incrust 1.1
+Wrote  : <C:\Users\ai770741\Documents\TP_Brost\tp2_p1\tp2_p1\tp2_p1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_incrust_0_0] -no_script -sync -force -quiet
+report_ip_status -name ip_status 
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/incrust/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/im_load'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/incrust'.
+report_ip_status -name ip_status
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/im_load'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/incrust'.
+report_ip_status -name ip_status 
+upgrade_ip -vlnv xilinx.com:hls:incrust:1.1 [get_ips  design_1_incrust_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_1_incrust_0_0 from Incrust 1.1 to Incrust 1.1
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 's_axi_AXILiteS' (xilinx.com:interface:aximm:1.0)
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'design_1_incrust_0_0'.
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_ARADDR'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_ARREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_ARVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_AWADDR'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_AWREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_AWVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_BREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_BRESP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_BVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_RDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_RREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_RRESP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_RVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_WDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_WREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_WSTRB'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_WVALID'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_1_incrust_0_0'. These changes may impact your design.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_1_incrust_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\ai770741\Documents\TP_Brost\tp2_p1\tp2_p1\tp2_p1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_1_incrust_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd]
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+WARNING: [BD 41-927] Following properties on pin /video_ctrl/adv_7511/i2c_sender_adv7511_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : <C:\Users\ai770741\Documents\TP_Brost\tp2_p1\tp2_p1\tp2_p1.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/adv_7511/i2c_sender_adv7511_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/adv_7511/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/adv_7511/xlconstant_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block im_load_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block incrust_0 .
+Exporting to file C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+export_ip_user_files -of_objects [get_files C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd] -no_script -sync -force -quiet
+export_simulation -of_objects [get_files C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd] -directory C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.ip_user_files -ipstatic_source_dir C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.cache/compile_simlib/modelsim} {questa=C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.cache/compile_simlib/questa} {riviera=C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.cache/compile_simlib/riviera} {activehdl=C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+report_ip_status -name ip_status 
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:jtag_axi:1.2 jtag_axi_0
+endgroup
+set_property location {4 736 -184} [get_bd_cells jtag_axi_0]
+undo
+INFO: [Common 17-17] undo 'set_property location {4 736 -184} [get_bd_cells jtag_axi_0]'
+set_property location {3 498 -170} [get_bd_cells jtag_axi_0]
+report_ip_status -name ip_status 
+set_property -dict [list CONFIG.PROTOCOL {2}] [get_bd_cells jtag_axi_0]
+connect_bd_intf_net [get_bd_intf_pins jtag_axi_0/M_AXI] [get_bd_intf_pins incrust_0/s_axi_AXILiteS]
+connect_bd_net [get_bd_pins jtag_axi_0/aclk] [get_bd_pins clk_wiz_0/clk_100]
+connect_bd_net [get_bd_pins jtag_axi_0/aresetn] [get_bd_pins xlconstant_1/dout]
+save_bd_design
+Wrote  : <C:\Users\ai770741\Documents\TP_Brost\tp2_p1\tp2_p1\tp2_p1.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+CRITICAL WARNING: [BD 41-1356] Slave segment </incrust_0/s_axi_AXILiteS/Reg> is not assigned into address space </jtag_axi_0/Data>. Please use Address Editor to either assign or exclude it.
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+CRITICAL WARNING: [BD 41-1356] Slave segment </incrust_0/s_axi_AXILiteS/Reg> is not assigned into address space </jtag_axi_0/Data>. Please use Address Editor to either assign or exclude it.
+WARNING: [BD 41-927] Following properties on pin /video_ctrl/adv_7511/i2c_sender_adv7511_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : <C:\Users\ai770741\Documents\TP_Brost\tp2_p1\tp2_p1\tp2_p1.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/adv_7511/i2c_sender_adv7511_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/adv_7511/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/adv_7511/xlconstant_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block im_load_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block incrust_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+Exporting to file C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Wed Nov 15 09:21:18 2023] Launched synth_1...
+Run output will be captured here: C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.runs/synth_1/runme.log
+[Wed Nov 15 09:21:18 2023] Launched impl_1...
+Run output will be captured here: C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.runs/synth_1
+
+assign_bd_address
+Slave segment </incrust_0/s_axi_AXILiteS/Reg> is being mapped into address space </jtag_axi_0/Data> at <0x44A0_0000 [ 64K ]>
+save_bd_design
+Wrote  : <C:\Users\ai770741\Documents\TP_Brost\tp2_p1\tp2_p1\tp2_p1.srcs\sources_1\bd\design_1\design_1.bd> 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+WARNING: [BD 41-927] Following properties on pin /video_ctrl/adv_7511/i2c_sender_adv7511_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+Wrote  : <C:\Users\ai770741\Documents\TP_Brost\tp2_p1\tp2_p1\tp2_p1.srcs\sources_1\bd\design_1\design_1.bd> 
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/synth/design_1.vhd
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/sim/design_1.vhd
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/adv_7511/i2c_sender_adv7511_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/adv_7511/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/adv_7511/xlconstant_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block im_load_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block incrust_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+Exporting to file C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Wed Nov 15 09:22:29 2023] Launched synth_1...
+Run output will be captured here: C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.runs/synth_1/runme.log
+[Wed Nov 15 09:22:29 2023] Launched impl_1...
+Run output will be captured here: C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.runs/impl_1/runme.log
+set_property PROBES.FILE {C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property FULL_PROBES.FILE {C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xc7z020_1]
+set_property PROGRAM.FILE {C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xc7z020_1]
+program_hw_devices [get_hw_devices xc7z020_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z020_1] 0]
+INFO: [Labtools 27-2302] Device xc7z020 (JTAG device index = 1) is programmed with a design that has 1 JTAG AXI core(s).
+open_bd_design {C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd}
+close_project
+open_project C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.xpr
+INFO: [Project 1-313] Project file moved from 'C:/formation_hls/tp2_p2' since last save.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/ai770741/Documents/TP_Brost/tp2_p2/video_vga_7511_zed/mountain.coe', nor could it be found using path 'C:/formation_hls/video_vga_7511_zed/mountain.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/ai770741/Documents/TP_Brost/tp2_p2/video_vga_7511_zed/triangle.coe', nor could it be found using path 'C:/formation_hls/video_vga_7511_zed/triangle.coe'.
+CRITICAL WARNING: [Project 1-311] Could not find the file 'C:/Users/ai770741/Documents/TP_Brost/tp2_p2/video_vga_7511_zed/zed_board.xdc', nor could it be found using path 'C:/formation_hls/video_vga_7511_zed/zed_board.xdc'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/hls/im_load_mm'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 2648.430 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/design_2.bd}
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:module_ref:i2c_sender_adv7511:1.0 - i2c_sender_adv7511_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_5
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_0
+Adding component instance block -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding component instance block -- xilinx.com:ip:axi_bram_ctrl:4.1 - axi_bram_ctrl_0
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - axi_bram_ctrl_0_bram
+Adding component instance block -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0
+Adding component instance block -- xilinx.com:ip:smartconnect:1.0 - smartconnect_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:hls:im_load_mm:1.1 - im_load_mm_0
+Successfully read diagram <design_2> from BD file <C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/design_2.bd>
+open_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 2964.492 ; gain = 61.918
+set_property  ip_repo_paths  {c:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/hls/im_load_mm C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/incrust} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/hls/im_load_mm'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/incrust'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/hls/im_load_mm'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/incrust'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/hls/im_load_mm'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/incrust'.
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/hls/im_load_mm'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/incrust'.
+open_project C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/im_load'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/incrust'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+open_bd_design {C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd}
+Adding component instance block -- xilinx.com:ip:clk_wiz:6.0 - clk_wiz_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_0
+Adding component instance block -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:v_tc:6.2 - v_tc_0
+Adding component instance block -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:module_ref:i2c_sender_adv7511:1.0 - i2c_sender_adv7511_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_5
+Adding component instance block -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_1
+Adding component instance block -- xilinx.com:ip:xlconstant:1.1 - xlconstant_2
+Adding component instance block -- xilinx.com:hls:im_load:1.1 - im_load_0
+Adding component instance block -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding component instance block -- xilinx.com:hls:incrust:1.1 - incrust_0
+Adding component instance block -- xilinx.com:ip:jtag_axi:1.2 - jtag_axi_0
+Successfully read diagram <design_1> from BD file <C:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/tp2_p1.srcs/sources_1/bd/design_1/design_1.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:07 . Memory (MB): peak = 3123.539 ; gain = 3.508
+update_compile_order -fileset sources_1
+current_project tp2_p2
+set_property location {4 940 -8} [get_bd_cells smartconnect_0]
+current_project tp2_p1
+current_project tp2_p2
+current_project tp2_p1
+current_project tp2_p2
+delete_bd_objs [get_bd_intf_nets im_load_mm_0_m_axis_video]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:hls:incrust:1.1 incrust_0
+endgroup
+set_property location {4 825 607} [get_bd_cells incrust_0]
+set_property location {3 982 652} [get_bd_cells incrust_0]
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins video_ctrl/video_in] [get_bd_intf_pins incrust_0/m_axis_video]
+connect_bd_intf_net [get_bd_intf_pins im_load_mm_0/m_axis_video] [get_bd_intf_pins incrust_0/s_axis_video]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:jtag_axi:1.2 jtag_axi_1
+endgroup
+set_property location {1.5 394 617} [get_bd_cells jtag_axi_1]
+set_property -dict [list CONFIG.PROTOCOL {2}] [get_bd_cells jtag_axi_1]
+connect_bd_intf_net [get_bd_intf_pins jtag_axi_1/M_AXI] [get_bd_intf_pins incrust_0/s_axi_AXILiteS]
+set_property location {3 559 588} [get_bd_cells jtag_axi_1]
+connect_bd_net [get_bd_pins jtag_axi_1/aclk] [get_bd_pins clk_wiz_0/clk_100]
+connect_bd_net [get_bd_pins jtag_axi_1/aresetn] [get_bd_pins video_ctrl/peripheral_aresetn]
+current_project tp2_p1
+regenerate_bd_layout
+current_project tp2_p2
+connect_bd_net [get_bd_pins incrust_0/ap_rst_n] [get_bd_pins video_ctrl/peripheral_aresetn]
+connect_bd_net [get_bd_pins incrust_0/ap_clk] [get_bd_pins clk_wiz_0/clk_100]
+current_project tp2_p1
+current_project tp2_p2
+save_bd_design
+Wrote  : <C:\Users\ai770741\Documents\TP_Brost\tp2_p2\tp2_p2\tp2_p2.srcs\sources_1\bd\design_2\design_2.bd> 
+Wrote  : <C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+reset_run synth_1
+make_wrapper -files [get_files C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/design_2.bd] -top
+CRITICAL WARNING: [BD 41-1356] Slave segment </incrust_0/s_axi_AXILiteS/Reg> is not assigned into address space </jtag_axi_1/Data>. Please use Address Editor to either assign or exclude it.
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-2180] Resetting the memory initialization file of </axi_bram_ctrl_0_bram> to default.
+CRITICAL WARNING: [BD 41-1356] Slave segment </incrust_0/s_axi_AXILiteS/Reg> is not assigned into address space </jtag_axi_1/Data>. Please use Address Editor to either assign or exclude it.
+WARNING: [BD 41-927] Following properties on pin /video_ctrl/i2c_sender_adv7511_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/incrust_0/ap_start
+
+Wrote  : <C:\Users\ai770741\Documents\TP_Brost\tp2_p2\tp2_p2\tp2_p2.srcs\sources_1\bd\design_2\design_2.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(19) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(19) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/smartconnect_0/S01_AXI_arlock'(1) to net 'im_load_mm_0_m_axi_gmem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/smartconnect_0/S01_AXI_awlock'(1) to net 'im_load_mm_0_m_axi_gmem_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/synth/design_2.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(19) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(19) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/smartconnect_0/S01_AXI_arlock'(1) to net 'im_load_mm_0_m_axi_gmem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/smartconnect_0/S01_AXI_awlock'(1) to net 'im_load_mm_0_m_axi_gmem_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/sim/design_2.vhd
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.vhd
+make_wrapper: Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3123.539 ; gain = 0.000
+assign_bd_address
+Slave segment </incrust_0/s_axi_AXILiteS/Reg> is being mapped into address space </jtag_axi_1/Data> at <0x44A0_0000 [ 64K ]>
+save_bd_design
+Wrote  : <C:\Users\ai770741\Documents\TP_Brost\tp2_p2\tp2_p2\tp2_p2.srcs\sources_1\bd\design_2\design_2.bd> 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+WARNING: [BD 41-2180] Resetting the memory initialization file of </axi_bram_ctrl_0_bram> to default.
+WARNING: [BD 41-927] Following properties on pin /video_ctrl/i2c_sender_adv7511_0/clk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	PHASE=0.0 
+CRITICAL WARNING: [BD 41-759] The input pins (listed below) are either not connected or do not have a source port, and they don't have a tie-off specified. These pins are tied-off to all 0's to avoid error in Implementation flow.
+Please check your design and connect them as needed: 
+/incrust_0/ap_start
+
+Wrote  : <C:\Users\ai770741\Documents\TP_Brost\tp2_p2\tp2_p2\tp2_p2.srcs\sources_1\bd\design_2\design_2.bd> 
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(19) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(19) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/smartconnect_0/S01_AXI_arlock'(1) to net 'im_load_mm_0_m_axi_gmem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/smartconnect_0/S01_AXI_awlock'(1) to net 'im_load_mm_0_m_axi_gmem_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/synth/design_2.vhd
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addra'(32) to net 'axi_bram_ctrl_0_BRAM_PORTA_ADDR'(19) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/axi_bram_ctrl_0_bram/addrb'(32) to net 'axi_bram_ctrl_0_BRAM_PORTB_ADDR'(19) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/smartconnect_0/S01_AXI_arlock'(1) to net 'im_load_mm_0_m_axi_gmem_ARLOCK'(2) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/smartconnect_0/S01_AXI_awlock'(1) to net 'im_load_mm_0_m_axi_gmem_AWLOCK'(2) - Only lower order bits will be connected.
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/sim/design_2.vhd
+VHDL Output written to : C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/hdl/design_2_wrapper.vhd
+INFO: [BD 41-1029] Generation completed for the IP Integrator block clk_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/v_tc_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/xlconstant_5 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/i2c_sender_adv7511_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0_bram .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_0 .
+Exporting to file c:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/hw_handoff/design_2_smartconnect_0_0.hwh
+Generated Block Design Tcl file c:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/hw_handoff/design_2_smartconnect_0_0_bd.tcl
+Generated Hardware Definition File c:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/ip/design_2_smartconnect_0_0/bd_0/synth/design_2_smartconnect_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block smartconnect_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block im_load_mm_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_ctrl/proc_sys_reset_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block incrust_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block jtag_axi_1 .
+Exporting to file C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/hw_handoff/design_2.hwh
+Generated Block Design Tcl file C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/hw_handoff/design_2_bd.tcl
+Generated Hardware Definition File C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/synth/design_2.hwdef
+[Wed Nov 15 16:24:42 2023] Launched synth_1...
+Run output will be captured here: C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.runs/synth_1/runme.log
+[Wed Nov 15 16:24:42 2023] Launched impl_1...
+Run output will be captured here: C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:26 ; elapsed = 00:00:31 . Memory (MB): peak = 3123.539 ; gain = 0.000
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+endgroup
+set_property location {5 1611 840} [get_bd_cells processing_system7_0]
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/clk_wiz_0/clk_100 (100 MHz)} Clk_xbar {/clk_wiz_0/clk_100 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_bram_ctrl_0/S_AXI} ddr_seg {Auto} intc_ip {/smartconnect_0} master_apm {0}}  [get_bd_intf_pins processing_system7_0/M_AXI_GP0]
+Slave segment </axi_bram_ctrl_0/S_AXI/Mem0> is being mapped into address space </processing_system7_0/Data> at <0x0000_0000 [ 512K ]>
+ERROR: [BD 41-1075] Cannot assign slave segment '/axi_bram_ctrl_0/S_AXI/Mem0' into address space '/processing_system7_0/Data' at address '0x0000_0000 [ 512K ]'. The proposed address '0x0000_0000 [ 512K ]' must fit an available aperture through master interface '/processing_system7_0/M_AXI_GP0' into address space '/processing_system7_0/Data'. Valid apertures are {<0x4000_0000 [ 1G ]>}.
+ERROR: [BD 5-48] Error: running assign_bd_address.
+undo
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/clk_wiz_0/clk_100 (100 MHz)} Clk_xbar {/clk_wiz_0/clk_100 (100 MHz)} Master {/processing_system7_0/M_AXI_GP0} Slave {/axi_bram_ctrl_0/S_AXI} ddr_seg {Auto} intc_ip {/smartconnect_0} master_apm {0}}  [get_bd_intf_pins processing_system7_0/M_AXI_GP0]'
+undo
+INFO: [Common 17-17] undo 'endgroup'
+INFO: [Common 17-17] undo 'apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]'
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+INFO: [Common 17-17] undo 'startgroup'
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP0 {1}] [get_bd_cells processing_system7_0]
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable" }  [get_bd_cells processing_system7_0]
+endgroup
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PCW_USE_S_AXI_HP0 {1}] [get_bd_cells processing_system7_0]
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP2_wr_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_rd_socket' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'S_AXI_GP3_wr_socket' specified in the portmap, is not found on the block! 
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {/clk_wiz_0/clk_100 (100 MHz)} Clk_slave {Auto} Clk_xbar {/clk_wiz_0/clk_100 (100 MHz)} Master {/jtag_axi_0/M_AXI} Slave {/processing_system7_0/S_AXI_HP0} ddr_seg {Auto} intc_ip {/smartconnect_0} master_apm {0}}  [get_bd_intf_pins processing_system7_0/S_AXI_HP0]
+Slave segment </processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is being mapped into address space </im_load_mm_0/Data_m_axi_gmem> at <0x1000_0000 [ 256M ]>
+Slave segment </processing_system7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is being mapped into address space </jtag_axi_0/Data> at <0x1000_0000 [ 256M ]>
+WARNING: [IP_Flow 19-4318] IP-XACT file does not exist: c:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/hls/im_load_mm/solution1/impl/ip/component.xml. It will be created.
+update_ip_catalog -rebuild -scan_changes
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/hls/im_load_mm'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/hls/incrust'.
+report_ip_status -name ip_status
+upgrade_ip -vlnv xilinx.com:hls:im_load_mm:1.1 [get_ips  design_2_im_load_mm_0_0] -log ip_upgrade.log
+Upgrading 'C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/design_2.bd'
+INFO: [IP_Flow 19-1972] Upgraded design_2_im_load_mm_0_0 from Im_load_mm 1.1 to Im_load_mm 1.1
+WARNING: [IP_Flow 19-4699] Upgrade has removed interface 'mem_ddr_V'
+WARNING: [IP_Flow 19-4697] Upgrade has added interface 's_axi_AXILiteS' (xilinx.com:interface:aximm:1.0)
+WARNING: [IP_Flow 19-3670] Detected external interface differences while upgrading 'design_2_im_load_mm_0_0'.
+WARNING: [IP_Flow 19-4700] Upgrade has removed port 'mem_ddr_V'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_ARADDR'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_ARREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_ARVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_AWADDR'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_AWREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_AWVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_BREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_BRESP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_BVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_RDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_RREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_RRESP'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_RVALID'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_WDATA'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_WREADY'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_WSTRB'
+WARNING: [IP_Flow 19-4698] Upgrade has added port 's_axi_AXILiteS_WVALID'
+WARNING: [IP_Flow 19-3298] Detected external port differences while upgrading 'design_2_im_load_mm_0_0'. These changes may impact your design.
+CRITICAL WARNING: [BD 41-1167] The pin 'mem_ddr_V' is not found on the upgraded version of the cell '/im_load_mm_0'. Its connection to the net 'xlconstant_1_dout' has been removed.
+CRITICAL WARNING: [Coretcl 2-1279] The upgrade of 'design_2_im_load_mm_0_0' has identified issues that may require user intervention. Please review the upgrade log 'c:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/ip_upgrade.log', and verify that the upgraded IP is correctly configured.
+Wrote  : <C:\Users\ai770741\Documents\TP_Brost\tp2_p2\tp2_p2\tp2_p2.srcs\sources_1\bd\design_2\design_2.bd> 
+Wrote  : <C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/ui/bd_1fdbff51.ui> 
+INFO: [Coretcl 2-1525] Wrote upgrade log to 'C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/ip_upgrade.log'.
+export_ip_user_files -of_objects [get_ips design_2_im_load_mm_0_0] -no_script -sync -force -quiet
+generate_target all [get_files  C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/design_2.bd]
+ERROR: [BD 41-758] The following clock pins are not connected to a valid clock source: 
+/processing_system7_0/M_AXI_GP0_ACLK
+
+ERROR: [BD 41-1031] Hdl Generation failed for the IP Integrator design C:/Users/ai770741/Documents/TP_Brost/tp2_p2/tp2_p2/tp2_p2.srcs/sources_1/bd/design_2/design_2.bd 
+ERROR: [Common 17-39] 'generate_target' failed due to earlier errors.
+report_ip_status -name ip_status 
+current_project tp2_p1
+current_project tp2_p2
+can't set "::ipgui_xilinx_com_ip_xlconstant_1_1::ipinstname": parent namespace doesn't exist
+WARNING: [IP_Flow 19-4815] Failed to restore variable '::ipgui_xilinx_com_ip_xlconstant_1_1::ipinstname' in Tcl scope '::ipgui_xilinx_com_ip_xlconstant_1_1_1': can't set "::ipgui_xilinx_com_ip_xlconstant_1_1::ipinstname": parent namespace doesn't exist
+can't set "::ipgui_xilinx_com_ip_xlconstant_1_1::updation_group_index": parent namespace doesn't exist
+WARNING: [IP_Flow 19-4815] Failed to restore variable '::ipgui_xilinx_com_ip_xlconstant_1_1::updation_group_index' in Tcl scope '::ipgui_xilinx_com_ip_xlconstant_1_1_1': can't set "::ipgui_xilinx_com_ip_xlconstant_1_1::updation_group_index": parent namespace doesn't exist
+can't set "::ipgui_xilinx_com_ip_xlconstant_1_1::validation_group_index": parent namespace doesn't exist
+WARNING: [IP_Flow 19-4815] Failed to restore variable '::ipgui_xilinx_com_ip_xlconstant_1_1::validation_group_index' in Tcl scope '::ipgui_xilinx_com_ip_xlconstant_1_1_1': can't set "::ipgui_xilinx_com_ip_xlconstant_1_1::validation_group_index": parent namespace doesn't exist
+ERROR: [IP_Flow 19-3428] Failed to create Customization object xlconstant_1
+ERROR: [IP_Flow 19-4759] Unable to copy customizer for IP c:/Users/ai770741/Documents/TP_Brost/tp2_p1/tp2_p1/.Xil/Vivado-5392-gs21-10/coregen/design_2_xlconstant_1_1/design_2_xlconstant_1_1.xci

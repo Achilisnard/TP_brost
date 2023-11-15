@@ -1,0 +1,94 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Tue Oct  3 14:56:02 2023
+| Host         : gs21-10 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7z020
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    16 |
+|    Minimum number of control sets                        |    16 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    68 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    16 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     2 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     7 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             344 |          111 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              93 |           30 |
+| Yes          | No                    | No                     |              19 |            6 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             156 |           51 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|                 Clock Signal                 |                                                         Enable Signal                                                         |                                                   Set/Reset Signal                                                  | Slice Load Count | Bel Load Count |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out1 |                                                                                                                               | rst_IBUF                                                                                                            |                3 |              4 |
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out1 | design_1/design_1_i/mire_0/U0/regslice_forward_p_red_U/obuf_inst/p_0_in                                                       | rst_IBUF                                                                                                            |                7 |              7 |
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out1 | design_1/design_1_i/mire_0/U0/ap_NS_fsm10_out                                                                                 | design_1/design_1_i/mire_0/U0/y_0_reg_73                                                                            |                2 |              9 |
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out1 | design_1/design_1_i/mire_0/U0/y_reg_1790                                                                                      |                                                                                                                     |                4 |              9 |
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out1 | design_1/design_1_i/mire_0/U0/ap_NS_fsm1                                                                                      | design_1/design_1_i/mire_0/U0/ap_NS_fsm12_out                                                                       |                2 |             10 |
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out1 | design_1/design_1_i/mire_0/U0/x_reg_1870                                                                                      |                                                                                                                     |                2 |             10 |
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out1 |                                                                                                                               | design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/h_count[0]_i_1_n_0                   |                3 |             12 |
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out1 | design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/v_count048_out                                 | design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/v_count[0]_i_1_n_0                   |                3 |             12 |
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out1 |                                                                                                                               | design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/p_3_in                               |                6 |             15 |
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out1 | design_1/design_1_i/mire_0/U0/regslice_forward_p_green_U/obuf_inst/p_0_in                                                     | rst_IBUF                                                                                                            |                8 |             18 |
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out1 | design_1/design_1_i/mire_0/U0/regslice_forward_p_blue_U/obuf_inst/p_0_in                                                      | rst_IBUF                                                                                                            |               13 |             25 |
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out1 | design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/RAM_RD_EN | design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/SAFETY_CKT_RD_RST |                8 |             30 |
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out2 | design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/RAM_WR_EN | design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/SAFETY_CKT_WR_RST |                8 |             45 |
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out1 |                                                                                                                               | design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/GEN_GENERATOR.U_TC_GEN/all_cfg0                             |               18 |             62 |
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out2 |                                                                                                                               |                                                                                                                     |               53 |            185 |
+|  design_1/design_1_i/clk_wiz_0/inst/clk_out1 |                                                                                                                               |                                                                                                                     |               58 |            195 |
++----------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------+------------------+----------------+
+
+

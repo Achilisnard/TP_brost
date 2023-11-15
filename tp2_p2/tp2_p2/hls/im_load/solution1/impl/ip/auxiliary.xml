@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="im_load" xd:componentRef="im_load" xd:initiationInterval="922562" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="video-&gt;data.p" xd:originalName="video" xd:direction="out" xd:interfaceRef="video" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="video-&gt;user" xd:originalName="video" xd:direction="out" xd:interfaceRef="video" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="video-&gt;last" xd:originalName="video" xd:direction="out" xd:interfaceRef="video" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="mem_V_q0" xd:originalName="mem_V_q0" xd:direction="in" xd:interfaceRef="mem_V_q0" xd:busTypeRef="ap_memory" xd:arraySize="1" xd:dataWidth="8"/>
+  <xd:latencyEstimates xd:best-case="922561" xd:worst-case="922561" xd:average-case="922561"/>
+  <xd:resourceEstimates xd:LUT="199" xd:FF="63" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

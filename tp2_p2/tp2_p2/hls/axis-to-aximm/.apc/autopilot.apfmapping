@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="axis_to_aximm" path="C:\formation_hls\video_vga_7511_zed\hls\axis-to-aximm\axis_to_aximm"/>
+    <originFiles name="axis_to_aximm.cpp" path="C:\formation_hls\video_vga_7511_zed\hls\axis-to-aximm\axis_to_aximm.cpp"/>
+  </source>
+  <testbench/>
+</autopilotfilemapping:AutoPilotFileMapping>

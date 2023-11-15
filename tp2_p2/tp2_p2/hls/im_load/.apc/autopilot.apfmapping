@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="im_load_cor.cpp" path="C:\formation_hls\video_vga_7511_zed\hls\im_load\im_load_cor.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="im_load_tb.cpp" path="C:\formation_hls\video_vga_7511_zed\hls\im_load\im_load_tb.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

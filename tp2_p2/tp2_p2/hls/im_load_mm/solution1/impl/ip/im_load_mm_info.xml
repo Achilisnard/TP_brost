@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <core name="" type="" target="">
+    <kernel name="im_load_mm" language="c" vlnv="xilinx.com:hls:im_load_mm:1.1" attributes="" hash="" preferredWorkGroupSizeMultiple="0" workGroupSize="1" debug="false" interrupt="true">
+      <port name="M_AXI_GMEM" mode="master" range="0xFFFFFFFF" dataWidth="8" portType="addressable" base="0x00000000"/>
+      <port name="S_AXI_AXILITES" mode="slave" range="0x1000" dataWidth="32" portType="addressable" base="0x00000000"/>
+      <arg name="mem_ddr_V" addressQualifier="1" id="0" port="M_AXI_GMEM" size="0x4" offset="0x10" hostOffset="0x0" hostSize="0x4" type="*"/>
+      <compileWorkGroupSize x="1" y="1" z="1"/>
+    </kernel>
+  </core>
+</project>

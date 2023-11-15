@@ -1,0 +1,1418 @@
+
+*** Running vivado
+    with args -log top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/ai770741/Documents/TP_Brost/tp1/Mire_VGA/solution1'.
+Command: synth_design -top top -part xc7z020clg484-1 -flatten_hierarchy none -bufg 24 -keep_equivalent_registers -resource_sharing off -shreg_min_size 1 -max_dsp 0
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-287] User specified maximum number of block DSP allowed in design is 0
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 3108 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 875.129 ; gain = 234.328
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/new/top.vhd:23]
+INFO: [Synth 8-3491] module 'design_1_wrapper' declared at 'C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:14' bound to instance 'design_1' of component 'design_1_wrapper' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/new/top.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:29]
+INFO: [Synth 8-3491] module 'design_1' declared at 'C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:234' bound to instance 'design_1_i' of component 'design_1' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'design_1' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:253]
+INFO: [Synth 8-3491] module 'design_1_clk_wiz_0_0' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71' bound to instance 'clk_wiz_0' of component 'design_1_clk_wiz_0_0' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:321]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71]
+INFO: [Synth 8-6157] synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:69]
+INFO: [Synth 8-6157] synthesizing module 'IBUF' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
+	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IFD_DELAY_VALUE bound to: AUTO - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IBUF' (1#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:32937]
+INFO: [Synth 8-6157] synthesizing module 'MMCME2_ADV' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39940]
+	Parameter BANDWIDTH bound to: OPTIMIZED - type: string 
+	Parameter CLKFBOUT_MULT_F bound to: 8.000000 - type: double 
+	Parameter CLKFBOUT_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKFBOUT_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKIN1_PERIOD bound to: 10.000000 - type: double 
+	Parameter CLKIN2_PERIOD bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_DIVIDE_F bound to: 31.750000 - type: double 
+	Parameter CLKOUT0_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT0_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT0_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT1_DIVIDE bound to: 8 - type: integer 
+	Parameter CLKOUT1_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT1_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT1_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT2_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT2_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT2_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT2_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT3_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT3_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT3_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT3_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT4_CASCADE bound to: FALSE - type: string 
+	Parameter CLKOUT4_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT4_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT4_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT4_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT5_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT5_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT5_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT5_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter CLKOUT6_DIVIDE bound to: 1 - type: integer 
+	Parameter CLKOUT6_DUTY_CYCLE bound to: 0.500000 - type: double 
+	Parameter CLKOUT6_PHASE bound to: 0.000000 - type: double 
+	Parameter CLKOUT6_USE_FINE_PS bound to: FALSE - type: string 
+	Parameter COMPENSATION bound to: ZHOLD - type: string 
+	Parameter DIVCLK_DIVIDE bound to: 1 - type: integer 
+	Parameter IS_CLKINSEL_INVERTED bound to: 1'b0 
+	Parameter IS_PSEN_INVERTED bound to: 1'b0 
+	Parameter IS_PSINCDEC_INVERTED bound to: 1'b0 
+	Parameter IS_PWRDWN_INVERTED bound to: 1'b0 
+	Parameter IS_RST_INVERTED bound to: 1'b0 
+	Parameter REF_JITTER1 bound to: 0.010000 - type: double 
+	Parameter REF_JITTER2 bound to: 0.010000 - type: double 
+	Parameter SS_EN bound to: FALSE - type: string 
+	Parameter SS_MODE bound to: CENTER_HIGH - type: string 
+	Parameter SS_MOD_PERIOD bound to: 10000 - type: integer 
+	Parameter STARTUP_WAIT bound to: FALSE - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'MMCME2_ADV' (2#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:39940]
+INFO: [Synth 8-6157] synthesizing module 'BUFG' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'BUFG' (3#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:1075]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0_clk_wiz' (4#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_clk_wiz.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_clk_wiz_0_0' (5#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.v:71]
+INFO: [Synth 8-3491] module 'design_1_mire_0_0' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_mire_0_0/synth/design_1_mire_0_0.vhd:56' bound to instance 'mire_0' of component 'design_1_mire_0_0' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:329]
+INFO: [Synth 8-638] synthesizing module 'design_1_mire_0_0' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_mire_0_0/synth/design_1_mire_0_0.vhd:76]
+INFO: [Synth 8-3491] module 'mire' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/mire.vhd:12' bound to instance 'U0' of component 'mire' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_mire_0_0/synth/design_1_mire_0_0.vhd:123]
+INFO: [Synth 8-638] synthesizing module 'mire' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/mire.vhd:32]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/mire.vhd:61]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/mire.vhd:64]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/mire.vhd:67]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/mire.vhd:70]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/mire.vhd:76]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_forward' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/regslice_core.vhd:139' bound to instance 'regslice_forward_p_red_U' of component 'regslice_forward' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/mire.vhd:126]
+INFO: [Synth 8-638] synthesizing module 'regslice_forward' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/regslice_core.vhd:154]
+	Parameter DataWidth bound to: 8 - type: integer 
+	Parameter W bound to: 9 - type: integer 
+INFO: [Synth 8-3491] module 'obuf' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/regslice_core.vhd:620' bound to instance 'obuf_inst' of component 'obuf' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/regslice_core.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'xil_defaultlib_obuf' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/regslice_core.vhd:632]
+	Parameter W bound to: 9 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'xil_defaultlib_obuf' (6#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/regslice_core.vhd:632]
+INFO: [Synth 8-256] done synthesizing module 'regslice_forward' (7#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/regslice_core.vhd:154]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_forward' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/regslice_core.vhd:139' bound to instance 'regslice_forward_p_green_U' of component 'regslice_forward' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/mire.vhd:140]
+	Parameter DataWidth bound to: 8 - type: integer 
+INFO: [Synth 8-3491] module 'regslice_forward' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/regslice_core.vhd:139' bound to instance 'regslice_forward_p_blue_U' of component 'regslice_forward' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/mire.vhd:154]
+INFO: [Synth 8-256] done synthesizing module 'mire' (8#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/aaef/hdl/vhdl/mire.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mire_0_0' (9#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_mire_0_0/synth/design_1_mire_0_0.vhd:76]
+INFO: [Synth 8-638] synthesizing module 'video_controller_imp_ZKN85' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:34]
+INFO: [Synth 8-3491] module 'design_1_fifo_generator_1_0' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_fifo_generator_1_0/synth/design_1_fifo_generator_1_0.vhd:59' bound to instance 'fifo_generator_1' of component 'design_1_fifo_generator_1_0' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'design_1_fifo_generator_1_0' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_fifo_generator_1_0/synth/design_1_fifo_generator_1_0.vhd:75]
+	Parameter C_COMMON_CLOCK bound to: 0 - type: integer 
+	Parameter C_SELECT_XPM bound to: 0 - type: integer 
+	Parameter C_COUNT_TYPE bound to: 0 - type: integer 
+	Parameter C_DATA_COUNT_WIDTH bound to: 15 - type: integer 
+	Parameter C_DEFAULT_VALUE bound to: BlankString - type: string 
+	Parameter C_DIN_WIDTH bound to: 24 - type: integer 
+	Parameter C_DOUT_RST_VAL bound to: 0 - type: string 
+	Parameter C_DOUT_WIDTH bound to: 24 - type: integer 
+	Parameter C_ENABLE_RLOCS bound to: 0 - type: integer 
+	Parameter C_FAMILY bound to: zynq - type: string 
+	Parameter C_FULL_FLAGS_RST_VAL bound to: 1 - type: integer 
+	Parameter C_HAS_ALMOST_EMPTY bound to: 0 - type: integer 
+	Parameter C_HAS_ALMOST_FULL bound to: 0 - type: integer 
+	Parameter C_HAS_BACKUP bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_INT_CLK bound to: 0 - type: integer 
+	Parameter C_HAS_MEMINIT_FILE bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_RD_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_RD_RST bound to: 0 - type: integer 
+	Parameter C_HAS_RST bound to: 1 - type: integer 
+	Parameter C_HAS_SRST bound to: 0 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_VALID bound to: 0 - type: integer 
+	Parameter C_HAS_WR_ACK bound to: 0 - type: integer 
+	Parameter C_HAS_WR_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_HAS_WR_RST bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE bound to: 2 - type: integer 
+	Parameter C_INIT_WR_PNTR_VAL bound to: 0 - type: integer 
+	Parameter C_MEMORY_TYPE bound to: 1 - type: integer 
+	Parameter C_MIF_FILE_NAME bound to: BlankString - type: string 
+	Parameter C_OPTIMIZATION_MODE bound to: 0 - type: integer 
+	Parameter C_OVERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_PRELOAD_LATENCY bound to: 1 - type: integer 
+	Parameter C_PRELOAD_REGS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE bound to: 8kx4 - type: string 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL bound to: 2 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_NEGATE_VAL bound to: 3 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL bound to: 32765 - type: integer 
+	Parameter C_PROG_FULL_THRESH_NEGATE_VAL bound to: 32764 - type: integer 
+	Parameter C_PROG_FULL_TYPE bound to: 0 - type: integer 
+	Parameter C_RD_DATA_COUNT_WIDTH bound to: 15 - type: integer 
+	Parameter C_RD_DEPTH bound to: 32768 - type: integer 
+	Parameter C_RD_FREQ bound to: 1 - type: integer 
+	Parameter C_RD_PNTR_WIDTH bound to: 15 - type: integer 
+	Parameter C_UNDERFLOW_LOW bound to: 0 - type: integer 
+	Parameter C_USE_DOUT_RST bound to: 1 - type: integer 
+	Parameter C_USE_ECC bound to: 0 - type: integer 
+	Parameter C_USE_EMBEDDED_REG bound to: 0 - type: integer 
+	Parameter C_USE_PIPELINE_REG bound to: 0 - type: integer 
+	Parameter C_POWER_SAVING_MODE bound to: 0 - type: integer 
+	Parameter C_USE_FIFO16_FLAGS bound to: 0 - type: integer 
+	Parameter C_USE_FWFT_DATA_COUNT bound to: 0 - type: integer 
+	Parameter C_VALID_LOW bound to: 0 - type: integer 
+	Parameter C_WR_ACK_LOW bound to: 0 - type: integer 
+	Parameter C_WR_DATA_COUNT_WIDTH bound to: 15 - type: integer 
+	Parameter C_WR_DEPTH bound to: 32768 - type: integer 
+	Parameter C_WR_FREQ bound to: 1 - type: integer 
+	Parameter C_WR_PNTR_WIDTH bound to: 15 - type: integer 
+	Parameter C_WR_RESPONSE_LATENCY bound to: 1 - type: integer 
+	Parameter C_MSGON_VAL bound to: 1 - type: integer 
+	Parameter C_ENABLE_RST_SYNC bound to: 1 - type: integer 
+	Parameter C_EN_SAFETY_CKT bound to: 1 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE bound to: 0 - type: integer 
+	Parameter C_SYNCHRONIZER_STAGE bound to: 2 - type: integer 
+	Parameter C_INTERFACE_TYPE bound to: 0 - type: integer 
+	Parameter C_AXI_TYPE bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_WR_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_RD_CHANNEL bound to: 1 - type: integer 
+	Parameter C_HAS_SLAVE_CE bound to: 0 - type: integer 
+	Parameter C_HAS_MASTER_CE bound to: 0 - type: integer 
+	Parameter C_ADD_NGC_CONSTRAINT bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_COMMON_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_USE_DEFAULT_SETTINGS bound to: 0 - type: integer 
+	Parameter C_AXI_ID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_ADDR_WIDTH bound to: 32 - type: integer 
+	Parameter C_AXI_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_AXI_LEN_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXI_LOCK_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXI_ID bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_AWUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_WUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_BUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_ARUSER bound to: 0 - type: integer 
+	Parameter C_HAS_AXI_RUSER bound to: 0 - type: integer 
+	Parameter C_AXI_ARUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_AWUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_WUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_BUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXI_RUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TDATA bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TID bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TDEST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TUSER bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TREADY bound to: 1 - type: integer 
+	Parameter C_HAS_AXIS_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TSTRB bound to: 0 - type: integer 
+	Parameter C_HAS_AXIS_TKEEP bound to: 0 - type: integer 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
+	Parameter C_AXIS_TSTRB_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TKEEP_WIDTH bound to: 1 - type: integer 
+	Parameter C_WACH_TYPE bound to: 0 - type: integer 
+	Parameter C_WDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_WRCH_TYPE bound to: 0 - type: integer 
+	Parameter C_RACH_TYPE bound to: 0 - type: integer 
+	Parameter C_RDCH_TYPE bound to: 0 - type: integer 
+	Parameter C_AXIS_TYPE bound to: 0 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WACH bound to: 2 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_WRCH bound to: 2 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RACH bound to: 2 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_RDCH bound to: 1 - type: integer 
+	Parameter C_IMPLEMENTATION_TYPE_AXIS bound to: 1 - type: integer 
+	Parameter C_APPLICATION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_APPLICATION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PRIM_FIFO_TYPE_WACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_WRCH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RACH bound to: 512x36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_RDCH bound to: 1kx36 - type: string 
+	Parameter C_PRIM_FIFO_TYPE_AXIS bound to: 1kx18 - type: string 
+	Parameter C_USE_ECC_WACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_WRCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RACH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_RDCH bound to: 0 - type: integer 
+	Parameter C_USE_ECC_AXIS bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_ERROR_INJECTION_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_DIN_WIDTH_WACH bound to: 1 - type: integer 
+	Parameter C_DIN_WIDTH_WDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_WRCH bound to: 2 - type: integer 
+	Parameter C_DIN_WIDTH_RACH bound to: 32 - type: integer 
+	Parameter C_DIN_WIDTH_RDCH bound to: 64 - type: integer 
+	Parameter C_DIN_WIDTH_AXIS bound to: 1 - type: integer 
+	Parameter C_WR_DEPTH_WACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_WDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_WRCH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RACH bound to: 16 - type: integer 
+	Parameter C_WR_DEPTH_RDCH bound to: 1024 - type: integer 
+	Parameter C_WR_DEPTH_AXIS bound to: 1024 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_WRCH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RACH bound to: 4 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_RDCH bound to: 10 - type: integer 
+	Parameter C_WR_PNTR_WIDTH_AXIS bound to: 10 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_DATA_COUNTS_AXIS bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_WRCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RACH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_RDCH bound to: 0 - type: integer 
+	Parameter C_HAS_PROG_FLAGS_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_WRCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RACH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_RDCH bound to: 1023 - type: integer 
+	Parameter C_PROG_FULL_THRESH_ASSERT_VAL_AXIS bound to: 1023 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_WRCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RACH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_RDCH bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_TYPE_AXIS bound to: 0 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH bound to: 1022 - type: integer 
+	Parameter C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS bound to: 1022 - type: integer 
+	Parameter C_REG_SLICE_MODE_WACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_WRCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RACH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_RDCH bound to: 0 - type: integer 
+	Parameter C_REG_SLICE_MODE_AXIS bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'fifo_generator_v13_2_5' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/276e/hdl/fifo_generator_v13_2_vhsyn_rfs.vhd:38604' bound to instance 'U0' of component 'fifo_generator_v13_2_5' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_fifo_generator_1_0/synth/design_1_fifo_generator_1_0.vhd:545]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1111]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (10#1) [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1059]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:205]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (11#1) [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:153]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:358]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (25#1) [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:284]
+INFO: [Synth 8-256] done synthesizing module 'design_1_fifo_generator_1_0' (39#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_fifo_generator_1_0/synth/design_1_fifo_generator_1_0.vhd:75]
+INFO: [Synth 8-3491] module 'design_1_mux_rgb_0_0' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_mux_rgb_0_0/synth/design_1_mux_rgb_0_0.vhd:56' bound to instance 'mux_rgb_0' of component 'design_1_mux_rgb_0_0' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:172]
+INFO: [Synth 8-638] synthesizing module 'design_1_mux_rgb_0_0' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_mux_rgb_0_0/synth/design_1_mux_rgb_0_0.vhd:68]
+INFO: [Synth 8-3491] module 'mux_rgb' declared at 'C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/new/mux_rgb.vhd:34' bound to instance 'U0' of component 'mux_rgb' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_mux_rgb_0_0/synth/design_1_mux_rgb_0_0.vhd:91]
+INFO: [Synth 8-638] synthesizing module 'mux_rgb' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/new/mux_rgb.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'mux_rgb' (40#1) [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/new/mux_rgb.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'design_1_mux_rgb_0_0' (41#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_mux_rgb_0_0/synth/design_1_mux_rgb_0_0.vhd:68]
+INFO: [Synth 8-3491] module 'design_1_util_vector_logic_0_0' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.v:57' bound to instance 'util_vector_logic_0' of component 'design_1_util_vector_logic_0_0' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:182]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_0' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'util_vector_logic_v2_0_1_util_vector_logic' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
+	Parameter C_OPERATION bound to: not - type: string 
+	Parameter C_SIZE bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'util_vector_logic_v2_0_1_util_vector_logic' (42#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/2137/hdl/util_vector_logic_v2_0_vl_rfs.v:45]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_0' (43#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_0/synth/design_1_util_vector_logic_0_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_util_vector_logic_0_1' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_1/synth/design_1_util_vector_logic_0_1.v:57' bound to instance 'util_vector_logic_1' of component 'design_1_util_vector_logic_0_1' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:187]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_vector_logic_0_1' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_1/synth/design_1_util_vector_logic_0_1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_vector_logic_0_1' (44#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_util_vector_logic_0_1/synth/design_1_util_vector_logic_0_1.v:57]
+INFO: [Synth 8-3491] module 'design_1_v_tc_0_0' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/synth/design_1_v_tc_0_0.vhd:59' bound to instance 'v_tc_0' of component 'design_1_v_tc_0_0' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:192]
+INFO: [Synth 8-638] synthesizing module 'design_1_v_tc_0_0' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/synth/design_1_v_tc_0_0.vhd:72]
+	Parameter C_HAS_AXI4_LITE bound to: 0 - type: integer 
+	Parameter C_HAS_INTC_IF bound to: 0 - type: integer 
+	Parameter C_GEN_INTERLACED bound to: 0 - type: integer 
+	Parameter C_GEN_HACTIVE_SIZE bound to: 640 - type: integer 
+	Parameter C_GEN_VACTIVE_SIZE bound to: 480 - type: integer 
+	Parameter C_GEN_CPARITY bound to: 0 - type: integer 
+	Parameter C_GEN_FIELDID_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_VBLANK_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_HBLANK_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_VSYNC_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_HSYNC_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_AVIDEO_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_ACHROMA_POLARITY bound to: 1 - type: integer 
+	Parameter C_GEN_VIDEO_FORMAT bound to: 2 - type: integer 
+	Parameter C_GEN_HFRAME_SIZE bound to: 800 - type: integer 
+	Parameter C_GEN_F0_VFRAME_SIZE bound to: 525 - type: integer 
+	Parameter C_GEN_F1_VFRAME_SIZE bound to: 525 - type: integer 
+	Parameter C_GEN_HSYNC_START bound to: 656 - type: integer 
+	Parameter C_GEN_HSYNC_END bound to: 752 - type: integer 
+	Parameter C_GEN_F0_VBLANK_HSTART bound to: 640 - type: integer 
+	Parameter C_GEN_F0_VBLANK_HEND bound to: 640 - type: integer 
+	Parameter C_GEN_F0_VSYNC_VSTART bound to: 489 - type: integer 
+	Parameter C_GEN_F0_VSYNC_VEND bound to: 491 - type: integer 
+	Parameter C_GEN_F0_VSYNC_HSTART bound to: 695 - type: integer 
+	Parameter C_GEN_F0_VSYNC_HEND bound to: 695 - type: integer 
+	Parameter C_GEN_F1_VBLANK_HSTART bound to: 640 - type: integer 
+	Parameter C_GEN_F1_VBLANK_HEND bound to: 640 - type: integer 
+	Parameter C_GEN_F1_VSYNC_VSTART bound to: 489 - type: integer 
+	Parameter C_GEN_F1_VSYNC_VEND bound to: 491 - type: integer 
+	Parameter C_GEN_F1_VSYNC_HSTART bound to: 695 - type: integer 
+	Parameter C_GEN_F1_VSYNC_HEND bound to: 695 - type: integer 
+	Parameter C_FSYNC_HSTART0 bound to: 795 - type: integer 
+	Parameter C_FSYNC_VSTART0 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART1 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART1 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART2 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART2 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART3 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART3 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART4 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART4 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART5 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART5 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART6 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART6 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART7 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART7 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART8 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART8 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART9 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART9 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART10 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART10 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART11 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART11 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART12 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART12 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART13 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART13 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART14 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART14 bound to: 0 - type: integer 
+	Parameter C_FSYNC_HSTART15 bound to: 0 - type: integer 
+	Parameter C_FSYNC_VSTART15 bound to: 0 - type: integer 
+	Parameter C_MAX_PIXELS bound to: 4096 - type: integer 
+	Parameter C_MAX_LINES bound to: 4096 - type: integer 
+	Parameter C_NUM_FSYNCS bound to: 1 - type: integer 
+	Parameter C_INTERLACE_EN bound to: 0 - type: integer 
+	Parameter C_GEN_AUTO_SWITCH bound to: 0 - type: integer 
+	Parameter C_DETECT_EN bound to: 0 - type: integer 
+	Parameter C_SYNC_EN bound to: 0 - type: integer 
+	Parameter C_GENERATE_EN bound to: 1 - type: integer 
+	Parameter C_DET_HSYNC_EN bound to: 1 - type: integer 
+	Parameter C_DET_VSYNC_EN bound to: 1 - type: integer 
+	Parameter C_DET_HBLANK_EN bound to: 1 - type: integer 
+	Parameter C_DET_VBLANK_EN bound to: 1 - type: integer 
+	Parameter C_DET_AVIDEO_EN bound to: 1 - type: integer 
+	Parameter C_DET_ACHROMA_EN bound to: 0 - type: integer 
+	Parameter C_GEN_HSYNC_EN bound to: 1 - type: integer 
+	Parameter C_GEN_VSYNC_EN bound to: 1 - type: integer 
+	Parameter C_GEN_HBLANK_EN bound to: 0 - type: integer 
+	Parameter C_GEN_VBLANK_EN bound to: 0 - type: integer 
+	Parameter C_GEN_AVIDEO_EN bound to: 1 - type: integer 
+	Parameter C_GEN_ACHROMA_EN bound to: 0 - type: integer 
+	Parameter C_GEN_FIELDID_EN bound to: 0 - type: integer 
+	Parameter C_DET_FIELDID_EN bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'v_tc' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/111e/hdl/v_tc_v6_2_vh_rfs.vhd:7218' bound to instance 'U0' of component 'v_tc' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/synth/design_1_v_tc_0_0.vhd:230]
+INFO: [Synth 8-256] done synthesizing module 'design_1_v_tc_0_0' (49#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/synth/design_1_v_tc_0_0.vhd:72]
+INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:203]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 8 - type: integer 
+	Parameter IN1_WIDTH bound to: 8 - type: integer 
+	Parameter IN2_WIDTH bound to: 8 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 24 - type: integer 
+	Parameter NUM_PORTS bound to: 3 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (50#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (51#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:58]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_0' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_0' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:210]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (52#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (53#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_0' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57' bound to instance 'xlslice_0' of component 'design_1_xlslice_0_0' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:214]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_0' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 24 - type: integer 
+	Parameter DIN_FROM bound to: 7 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (54#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_0' (55#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_0/synth/design_1_xlslice_0_0.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_1' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_1/synth/design_1_xlslice_0_1.v:57' bound to instance 'xlslice_1' of component 'design_1_xlslice_0_1' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:219]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_1' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_1/synth/design_1_xlslice_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 24 - type: integer 
+	Parameter DIN_FROM bound to: 15 - type: integer 
+	Parameter DIN_TO bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (55#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_1' (56#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_1/synth/design_1_xlslice_0_1.v:57]
+INFO: [Synth 8-3491] module 'design_1_xlslice_0_2' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_2/synth/design_1_xlslice_0_2.v:57' bound to instance 'xlslice_2' of component 'design_1_xlslice_0_2' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:224]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlslice_0_2' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_2/synth/design_1_xlslice_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 24 - type: integer 
+	Parameter DIN_FROM bound to: 23 - type: integer 
+	Parameter DIN_TO bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (56#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlslice_0_2' (57#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlslice_0_2/synth/design_1_xlslice_0_2.v:57]
+INFO: [Synth 8-256] done synthesizing module 'video_controller_imp_ZKN85' (58#1) [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:34]
+INFO: [Synth 8-3491] module 'design_1_xlconstant_0_1' declared at 'c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:57' bound to instance 'xlconstant_0' of component 'design_1_xlconstant_0_1' [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:365]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_1' [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_1' (59#1) [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:57]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (60#1) [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/synth/design_1.vhd:253]
+INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (61#1) [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:29]
+INFO: [Synth 8-256] done synthesizing module 'top' (62#1) [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/new/top.vhd:23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[14]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[13]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[11]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[10]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[9]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[8]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In31[0]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0chroma_start[11]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0chroma_start[10]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0chroma_start[9]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0chroma_start[8]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0chroma_start[7]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0chroma_start[6]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0chroma_start[5]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0chroma_start[4]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0chroma_start[3]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0chroma_start[2]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0chroma_start[1]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0chroma_start[0]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0fp_start_hori[11]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0fp_start_hori[10]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0fp_start_hori[9]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0fp_start_hori[8]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0fp_start_hori[7]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0fp_start_hori[6]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0fp_start_hori[5]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0fp_start_hori[4]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0fp_start_hori[3]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0fp_start_hori[2]
+WARNING: [Synth 8-3331] design tc_generator has unconnected port gen_v0fp_start_hori[1]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:49 ; elapsed = 00:00:51 . Memory (MB): peak = 1201.801 ; gain = 561.000
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1201.801 ; gain = 561.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1201.801 ; gain = 561.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.142 . Memory (MB): peak = 1201.801 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 55 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1/design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0_board.xdc] for cell 'design_1/design_1_i/clk_wiz_0/inst'
+Parsing XDC File [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1/design_1_i/clk_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc] for cell 'design_1/design_1_i/clk_wiz_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_clk_wiz_0_0/design_1_clk_wiz_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_fifo_generator_1_0/design_1_fifo_generator_1_0.xdc] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0'
+Finished Parsing XDC File [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_fifo_generator_1_0/design_1_fifo_generator_1_0.xdc] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/constrs_1/new/zedboard.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW3'. [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/constrs_1/new/zedboard.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/constrs_1/new/zedboard.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW4'. [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/constrs_1/new/zedboard.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/constrs_1/new/zedboard.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW5'. [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/constrs_1/new/zedboard.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/constrs_1/new/zedboard.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW6'. [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/constrs_1/new/zedboard.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/constrs_1/new/zedboard.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 13]]'. [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/constrs_1/new/zedboard.xdc:24]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 33]]'. [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/constrs_1/new/zedboard.xdc:25]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 35]]'. [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/constrs_1/new/zedboard.xdc:26]
+Finished Parsing XDC File [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/constrs_1/new/zedboard.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/constrs_1/new/zedboard.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.runs/synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.runs/synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc] for cell 'design_1/design_1_i/video_controller/v_tc_0/U0'
+Finished Parsing XDC File [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_v_tc_0_0/design_1_v_tc_0_0_clocks.xdc] for cell 'design_1/design_1_i/video_controller/v_tc_0/U0'
+Parsing XDC File [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_fifo_generator_1_0/design_1_fifo_generator_1_0_clocks.xdc] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0'
+Finished Parsing XDC File [c:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.srcs/sources_1/bd/design_1/ip/design_1_fifo_generator_1_0/design_1_fifo_generator_1_0_clocks.xdc] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/rd_pntr_cdc_inst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gcx.clkx/wr_pntr_cdc_inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [C:/Xilinx/Vivado/2019.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1201.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.077 . Memory (MB): peak = 1201.801 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1201.801 ; gain = 561.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1201.801 ; gain = 561.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/v_tc_0/U0. (constraint file  C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.runs/synth_1/dont_touch.xdc, line 49).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/clk_wiz_0/inst. (constraint file  C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.runs/synth_1/dont_touch.xdc, line 52).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/fifo_generator_1/U0. (constraint file  C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.runs/synth_1/dont_touch.xdc, line 60).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/v_tc_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/util_vector_logic_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/util_vector_logic_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/fifo_generator_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/xlslice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/xlslice_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/xlslice_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/mux_rgb_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/mire_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /rd_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /\gntv_or_sync_fifo.gcx.clkx /wr_pntr_cdc_inst. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1/design_1_i/video_controller/fifo_generator_1/U0/inst_fifo_gen/\gconvfifo.rf /\grf.rf /rstblk/\ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst . (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:03 . Memory (MB): peak = 1201.801 ; gain = 561.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 1201.801 ; gain = 561.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 5     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input     15 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 138   
++---Registers : 
+	               32 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               15 Bit    Registers := 11    
+	               12 Bit    Registers := 15    
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 5     
+	                7 Bit    Registers := 1     
+	                5 Bit    Registers := 48    
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 218   
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 14    
+	   3 Input     12 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 71    
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module xil_defaultlib_obuf 
+Detailed RTL Component Info : 
++---Registers : 
+	                9 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module mire 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      9 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module xpm_cdc_sync_rst 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module xpm_cdc_single 
+Detailed RTL Component Info : 
++---Registers : 
+	                5 Bit    Registers := 1     
+Module reset_blk_ramfifo 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module bindec 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 8     
+Module blk_mem_gen_mux 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module blk_mem_gen_mux__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
+Module blk_mem_gen_prim_width 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized0 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized1 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized2 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized3 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized4 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized5 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized6 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized7 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized8 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized9 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized10 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized11 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized12 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized13 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized14 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized15 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized16 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized17 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized18 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized19 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module blk_mem_gen_prim_width__parameterized20 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
+Module xpm_cdc_gray 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input     15 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 14    
++---Registers : 
+	               15 Bit    Registers := 4     
+Module rd_bin_cntr 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 1     
+Module compare 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      1 Bit         XORs := 15    
+Module rd_status_flags_as 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module wr_bin_cntr 
+Detailed RTL Component Info : 
++---Registers : 
+	               15 Bit    Registers := 2     
+Module wr_status_flags_as 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module mux_rgb 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+Module tc_generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 5     
+	   2 Input      1 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 4     
++---Registers : 
+	               17 Bit    Registers := 1     
+	               12 Bit    Registers := 13    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 22    
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 12    
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 41    
+Module tc_top 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 7     
+	   5 Input      1 Bit        Muxes := 1     
+Module v_tc 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 2     
+	   3 Input     12 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\hactive_start_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\hactive_start_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\hactive_start_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\v0active_start_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\v0active_start_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\v0active_start_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/all_lock_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\hactive_start_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\hactive_start_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\hactive_start_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\hactive_start_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\hactive_start_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\hactive_start_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\hactive_start_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\hactive_start_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\hactive_start_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\v0active_start_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\v0active_start_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\v0active_start_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\v0active_start_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\v0active_start_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\v0active_start_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\v0active_start_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\v0active_start_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /\v0active_start_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /field_id_int_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[6] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /active_chroma_int_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /field_id_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /vblank_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\GEN_GENERATOR.U_TC_GEN /hblank_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_error_int_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_error_int_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_error_int_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_error_int_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_error_int_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_error_int_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_error_int_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[19] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[20] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[24] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[25] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[26] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[27] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[28] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[30] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (design_1/design_1_i/video_controller/v_tc_0/U0/U_TC_TOP/\intr_status_int_reg[31] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:08 ; elapsed = 00:01:11 . Memory (MB): peak = 1201.801 ; gain = 561.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:21 . Memory (MB): peak = 1201.801 ; gain = 561.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 1201.801 ; gain = 561.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:24 . Memory (MB): peak = 1201.801 ; gain = 561.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 1201.801 ; gain = 561.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 1201.801 ; gain = 561.000
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 1201.801 ; gain = 561.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register Report:
++-----------------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name            | RTL Name                            | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++-----------------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|blk_mem_gen_prim_width | SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[4] | 4      | 22    | NO           | NO                 | YES               | 22     | 0       | 
+|blk_mem_gen_prim_width | SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[4] | 4      | 22    | NO           | NO                 | YES               | 22     | 0       | 
+|tc_top                 | detect_en_d_reg[3]                  | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
+|tc_top                 | generate_en_d_reg[3]                | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
++-----------------------+-------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     3|
+|2     |CARRY4     |    37|
+|3     |LUT1       |    64|
+|4     |LUT2       |   194|
+|5     |LUT3       |    36|
+|6     |LUT4       |    67|
+|7     |LUT5       |    25|
+|8     |LUT6       |   113|
+|9     |MMCME2_ADV |     1|
+|10    |MUXCY      |    32|
+|11    |MUXF7      |    18|
+|12    |RAMB36E1   |     6|
+|13    |RAMB36E1_1 |    16|
+|14    |SRL16E     |    46|
+|15    |FDRE       |   705|
+|16    |FDSE       |    16|
+|17    |IBUF       |     2|
+|18    |OBUF       |    14|
++------+-----------+------+
+
+Report Instance Areas: 
++------+--------------------------------------------------------------------------------------------+----------------------------------------------+------+
+|      |Instance                                                                                    |Module                                        |Cells |
++------+--------------------------------------------------------------------------------------------+----------------------------------------------+------+
+|1     |top                                                                                         |                                              |  1395|
+|2     |  design_1                                                                                  |design_1_wrapper                              |  1380|
+|3     |    design_1_i                                                                              |design_1                                      |  1380|
+|4     |      clk_wiz_0                                                                             |design_1_clk_wiz_0_0                          |     5|
+|5     |        inst                                                                                |design_1_clk_wiz_0_0_clk_wiz                  |     5|
+|6     |      mire_0                                                                                |design_1_mire_0_0                             |   129|
+|7     |        U0                                                                                  |mire                                          |   129|
+|8     |          regslice_forward_p_red_U                                                          |regslice_forward__1                           |    14|
+|9     |            obuf_inst                                                                       |xil_defaultlib_obuf__1                        |    11|
+|10    |          regslice_forward_p_green_U                                                        |regslice_forward__2                           |    14|
+|11    |            obuf_inst                                                                       |xil_defaultlib_obuf__2                        |    11|
+|12    |          regslice_forward_p_blue_U                                                         |regslice_forward                              |    14|
+|13    |            obuf_inst                                                                       |xil_defaultlib_obuf                           |    11|
+|14    |      video_controller                                                                      |video_controller_imp_ZKN85                    |  1246|
+|15    |        fifo_generator_1                                                                    |design_1_fifo_generator_1_0                   |   862|
+|16    |          U0                                                                                |fifo_generator_v13_2_5                        |   862|
+|17    |            inst_fifo_gen                                                                   |fifo_generator_v13_2_5_synth                  |   862|
+|18    |              \gconvfifo.rf                                                                 |fifo_generator_top                            |   862|
+|19    |                \grf.rf                                                                     |fifo_generator_ramfifo                        |   862|
+|20    |                  rstblk                                                                    |reset_blk_ramfifo                             |    52|
+|21    |                    \ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst           |xpm_cdc_sync_rst__2                           |     5|
+|22    |                    \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_sync_rst_inst_wrst   |xpm_cdc_sync_rst                              |     5|
+|23    |                    \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_wrst_rd  |xpm_cdc_single__2                             |     5|
+|24    |                    \ngwrdrst.grst.g7serrst.gsckt_wrst.gic_rst.xpm_cdc_single_inst_rrst_wr  |xpm_cdc_single                                |     5|
+|25    |                  \gntv_or_sync_fifo.mem                                                    |memory                                        |   477|
+|26    |                    \gbm.gbmg.gbmga.ngecc.bmg                                               |blk_mem_gen_v8_4_4                            |   476|
+|27    |                      inst_blk_mem_gen                                                      |blk_mem_gen_v8_4_4_synth                      |   476|
+|28    |                        \gnbram.gnativebmg.native_blk_mem_gen                               |blk_mem_gen_top                               |   476|
+|29    |                          \valid.cstr                                                       |blk_mem_gen_generic_cstr                      |   476|
+|30    |                            \bindec_a.bindec_inst_a                                         |bindec__1                                     |     8|
+|31    |                            \bindec_b.bindec_inst_b                                         |bindec                                        |     8|
+|32    |                            \has_mux_b.B                                                    |blk_mem_gen_mux__parameterized0               |    60|
+|33    |                            \ramloop[0].ram.r                                               |blk_mem_gen_prim_width                        |    18|
+|34    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper                      |     1|
+|35    |                            \ramloop[1].ram.r                                               |blk_mem_gen_prim_width__parameterized0        |    18|
+|36    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized0      |     1|
+|37    |                            \ramloop[2].ram.r                                               |blk_mem_gen_prim_width__parameterized1        |    18|
+|38    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized1      |     1|
+|39    |                            \ramloop[3].ram.r                                               |blk_mem_gen_prim_width__parameterized2        |    18|
+|40    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized2      |     1|
+|41    |                            \ramloop[4].ram.r                                               |blk_mem_gen_prim_width__parameterized3        |    18|
+|42    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized3      |     1|
+|43    |                            \ramloop[5].ram.r                                               |blk_mem_gen_prim_width__parameterized4        |    18|
+|44    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized4      |     1|
+|45    |                            \ramloop[6].ram.r                                               |blk_mem_gen_prim_width__parameterized5        |    18|
+|46    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized5      |     1|
+|47    |                            \ramloop[7].ram.r                                               |blk_mem_gen_prim_width__parameterized6        |    18|
+|48    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized6      |     1|
+|49    |                            \ramloop[8].ram.r                                               |blk_mem_gen_prim_width__parameterized7        |    18|
+|50    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized7      |     1|
+|51    |                            \ramloop[9].ram.r                                               |blk_mem_gen_prim_width__parameterized8        |    18|
+|52    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized8      |     1|
+|53    |                            \ramloop[10].ram.r                                              |blk_mem_gen_prim_width__parameterized9        |    18|
+|54    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized9      |     1|
+|55    |                            \ramloop[11].ram.r                                              |blk_mem_gen_prim_width__parameterized10       |    18|
+|56    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized10     |     1|
+|57    |                            \ramloop[12].ram.r                                              |blk_mem_gen_prim_width__parameterized11       |    18|
+|58    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized11     |     1|
+|59    |                            \ramloop[13].ram.r                                              |blk_mem_gen_prim_width__parameterized12       |    18|
+|60    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized12     |     1|
+|61    |                            \ramloop[14].ram.r                                              |blk_mem_gen_prim_width__parameterized13       |    18|
+|62    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized13     |     1|
+|63    |                            \ramloop[15].ram.r                                              |blk_mem_gen_prim_width__parameterized14       |    18|
+|64    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized14     |     1|
+|65    |                            \ramloop[16].ram.r                                              |blk_mem_gen_prim_width__parameterized15       |    18|
+|66    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized15     |     1|
+|67    |                            \ramloop[17].ram.r                                              |blk_mem_gen_prim_width__parameterized16       |    18|
+|68    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized16     |     1|
+|69    |                            \ramloop[18].ram.r                                              |blk_mem_gen_prim_width__parameterized17       |    18|
+|70    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized17     |     1|
+|71    |                            \ramloop[19].ram.r                                              |blk_mem_gen_prim_width__parameterized18       |    18|
+|72    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized18     |     1|
+|73    |                            \ramloop[20].ram.r                                              |blk_mem_gen_prim_width__parameterized19       |    18|
+|74    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized19     |     1|
+|75    |                            \ramloop[21].ram.r                                              |blk_mem_gen_prim_width__parameterized20       |    18|
+|76    |                              \prim_noinit.ram                                              |blk_mem_gen_prim_wrapper__parameterized20     |     1|
+|77    |                  \gntv_or_sync_fifo.gcx.clkx                                               |clk_x_pntrs                                   |   176|
+|78    |                    wr_pntr_cdc_inst                                                        |xpm_cdc_gray__2                               |    88|
+|79    |                    rd_pntr_cdc_inst                                                        |xpm_cdc_gray                                  |    88|
+|80    |                  \gntv_or_sync_fifo.gl0.rd                                                 |rd_logic                                      |    71|
+|81    |                    rpntr                                                                   |rd_bin_cntr                                   |    35|
+|82    |                    \gras.rsts                                                              |rd_status_flags_as                            |    35|
+|83    |                      c0                                                                    |compare__1                                    |    16|
+|84    |                      c1                                                                    |compare__2                                    |    16|
+|85    |                  \gntv_or_sync_fifo.gl0.wr                                                 |wr_logic                                      |    86|
+|86    |                    wpntr                                                                   |wr_bin_cntr                                   |    50|
+|87    |                    \gwas.wsts                                                              |wr_status_flags_as                            |    35|
+|88    |                      c1                                                                    |compare__3                                    |    16|
+|89    |                      c2                                                                    |compare                                       |    16|
+|90    |        mux_rgb_0                                                                           |design_1_mux_rgb_0_0                          |    24|
+|91    |          U0                                                                                |mux_rgb                                       |    24|
+|92    |        util_vector_logic_0                                                                 |design_1_util_vector_logic_0_0                |     1|
+|93    |          inst                                                                              |util_vector_logic_v2_0_1_util_vector_logic__1 |     1|
+|94    |        util_vector_logic_1                                                                 |design_1_util_vector_logic_0_1                |     1|
+|95    |          inst                                                                              |util_vector_logic_v2_0_1_util_vector_logic    |     1|
+|96    |        v_tc_0                                                                              |design_1_v_tc_0_0                             |   358|
+|97    |          U0                                                                                |v_tc                                          |   358|
+|98    |            U_VIDEO_CTRL                                                                    |video_ctrl                                    |     0|
+|99    |            U_TC_TOP                                                                        |tc_top                                        |   355|
+|100   |              \GEN_GENERATOR.U_TC_GEN                                                       |tc_generator                                  |   326|
+|101   |        xlconcat_0                                                                          |design_1_xlconcat_0_0                         |     0|
+|102   |        xlconstant_0                                                                        |design_1_xlconstant_0_0                       |     0|
+|103   |        xlslice_0                                                                           |design_1_xlslice_0_0                          |     0|
+|104   |        xlslice_1                                                                           |design_1_xlslice_0_1                          |     0|
+|105   |        xlslice_2                                                                           |design_1_xlslice_0_2                          |     0|
+|106   |      xlconstant_0                                                                          |design_1_xlconstant_0_1                       |     0|
++------+--------------------------------------------------------------------------------------------+----------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:25 ; elapsed = 00:01:29 . Memory (MB): peak = 1201.801 ; gain = 561.000
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 4307 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:01:24 . Memory (MB): peak = 1201.801 ; gain = 561.000
+Synthesis Optimization Complete : Time (s): cpu = 00:01:26 ; elapsed = 00:01:29 . Memory (MB): peak = 1201.801 ; gain = 561.000
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 1201.801 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 110 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1201.801 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+189 Infos, 107 Warnings, 4 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:34 ; elapsed = 00:01:38 . Memory (MB): peak = 1201.801 ; gain = 868.383
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1201.801 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ai770741/Documents/TP_Brost/tp1/tp1/tp1.runs/synth_1/top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  3 14:54:08 2023...

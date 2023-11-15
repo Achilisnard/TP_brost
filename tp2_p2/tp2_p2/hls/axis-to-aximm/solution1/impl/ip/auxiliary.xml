@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="axis_to_aximm" xd:componentRef="axis_to_aximm" xd:initiationInterval="x" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="*(mem_ddr)" xd:originalName="mem_ddr" xd:direction="inout" xd:interfaceRef="m_axi_gmem" xd:busTypeRef="aximm" xd:dataWidth="8" xd:bufferDirection="out"/>
+  <xd:arg xd:name="s_axis_video.data" xd:originalName="s_axis_video" xd:direction="in" xd:interfaceRef="s_axis_video" xd:busTypeRef="axis" xd:dataWidth="8"/>
+  <xd:arg xd:name="s_axis_video.keep" xd:originalName="s_axis_video" xd:direction="in" xd:interfaceRef="s_axis_video" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="s_axis_video.strb" xd:originalName="s_axis_video" xd:direction="in" xd:interfaceRef="s_axis_video" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="s_axis_video.user" xd:originalName="s_axis_video" xd:direction="in" xd:interfaceRef="s_axis_video" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="s_axis_video.last" xd:originalName="s_axis_video" xd:direction="in" xd:interfaceRef="s_axis_video" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="s_axis_video.id" xd:originalName="s_axis_video" xd:direction="in" xd:interfaceRef="s_axis_video" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="s_axis_video.dest" xd:originalName="s_axis_video" xd:direction="in" xd:interfaceRef="s_axis_video" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="mem_ddr.V" xd:originalName="mem_ddr" xd:direction="in" xd:interfaceRef="mem_ddr_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:aximmInterfaceRef="m_axi_gmem" xd:dataWidth="32"/>
+  <xd:arg xd:name="hsize_in" xd:originalName="hsize_in" xd:direction="in" xd:interfaceRef="hsize_in" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:arg xd:name="vsize_in" xd:originalName="vsize_in" xd:direction="in" xd:interfaceRef="vsize_in" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="1113" xd:FF="825" xd:BRAM="3" xd:DSP="0"/>
+</xd:acceleratorMap>

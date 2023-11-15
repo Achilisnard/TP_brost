@@ -1,0 +1,656 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x9D85DD8F8A8C6E95",
+      "device": "xc7z020clg484-1",
+      "name": "design_1",
+      "synth_flow_mode": "None",
+      "tool_version": "2019.2",
+      "validated": "true"
+    },
+    "design_tree": {
+      "clk_wiz_0": "",
+      "video_controller": {
+        "xlconcat_0": "",
+        "util_vector_logic_0": "",
+        "xlconstant_0": "",
+        "util_vector_logic_1": "",
+        "v_tc_0": "",
+        "fifo_generator_1": "",
+        "xlslice_0": "",
+        "xlslice_1": "",
+        "xlslice_2": "",
+        "mux_rgb_0": ""
+      },
+      "mire_0": "",
+      "xlconstant_0": ""
+    },
+    "ports": {
+      "rst": {
+        "direction": "I"
+      },
+      "clk": {
+        "direction": "I"
+      },
+      "vsync_out_0": {
+        "direction": "O"
+      },
+      "hsync_out_0": {
+        "direction": "O"
+      },
+      "red_out_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "green_out_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "blue_out_0": {
+        "direction": "O",
+        "left": "7",
+        "right": "0"
+      },
+      "active_video_out_0": {
+        "direction": "O"
+      },
+      "ap_idle_0": {
+        "direction": "O"
+      },
+      "clk_pixel": {
+        "direction": "O",
+        "parameters": {
+          "CLK_DOMAIN": {
+            "value": "/clk_wiz_0_clk_out1",
+            "value_src": "ip_prop"
+          },
+          "FREQ_HZ": {
+            "value": "25196850",
+            "value_src": "ip_prop"
+          },
+          "PHASE": {
+            "value": "0.0",
+            "value_src": "ip_prop"
+          }
+        }
+      }
+    },
+    "components": {
+      "clk_wiz_0": {
+        "vlnv": "xilinx.com:ip:clk_wiz:6.0",
+        "xci_name": "design_1_clk_wiz_0_0",
+        "parameters": {
+          "CLKOUT1_JITTER": {
+            "value": "191.399"
+          },
+          "CLKOUT1_PHASE_ERROR": {
+            "value": "114.212"
+          },
+          "CLKOUT1_REQUESTED_OUT_FREQ": {
+            "value": "25.200"
+          },
+          "CLKOUT2_JITTER": {
+            "value": "144.719"
+          },
+          "CLKOUT2_PHASE_ERROR": {
+            "value": "114.212"
+          },
+          "CLKOUT2_REQUESTED_OUT_FREQ": {
+            "value": "100.000"
+          },
+          "CLKOUT2_USED": {
+            "value": "true"
+          },
+          "MMCM_CLKFBOUT_MULT_F": {
+            "value": "8.000"
+          },
+          "MMCM_CLKOUT0_DIVIDE_F": {
+            "value": "31.750"
+          },
+          "MMCM_CLKOUT1_DIVIDE": {
+            "value": "8"
+          },
+          "MMCM_DIVCLK_DIVIDE": {
+            "value": "1"
+          },
+          "NUM_OUT_CLKS": {
+            "value": "2"
+          }
+        }
+      },
+      "video_controller": {
+        "ports": {
+          "red": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "green": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "blue": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "rst": {
+            "direction": "I"
+          },
+          "data_ack": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "clk_pixel": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "hsync_out_0": {
+            "direction": "O"
+          },
+          "vsync_out_0": {
+            "direction": "O"
+          },
+          "active_video_out_0": {
+            "direction": "O"
+          },
+          "fsync_out": {
+            "direction": "O",
+            "left": "0",
+            "right": "0"
+          },
+          "clk_system": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "data_vld": {
+            "direction": "I"
+          },
+          "red_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "green_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "blue_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        },
+        "components": {
+          "xlconcat_0": {
+            "vlnv": "xilinx.com:ip:xlconcat:2.1",
+            "xci_name": "design_1_xlconcat_0_0",
+            "parameters": {
+              "IN0_WIDTH": {
+                "value": "8"
+              },
+              "IN1_WIDTH": {
+                "value": "8"
+              },
+              "IN2_WIDTH": {
+                "value": "8"
+              },
+              "NUM_PORTS": {
+                "value": "3"
+              },
+              "dout_width": {
+                "value": "24"
+              }
+            }
+          },
+          "util_vector_logic_0": {
+            "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+            "xci_name": "design_1_util_vector_logic_0_0",
+            "parameters": {
+              "C_OPERATION": {
+                "value": "not"
+              },
+              "C_SIZE": {
+                "value": "1"
+              }
+            }
+          },
+          "xlconstant_0": {
+            "vlnv": "xilinx.com:ip:xlconstant:1.1",
+            "xci_name": "design_1_xlconstant_0_0"
+          },
+          "util_vector_logic_1": {
+            "vlnv": "xilinx.com:ip:util_vector_logic:2.0",
+            "xci_name": "design_1_util_vector_logic_0_1",
+            "parameters": {
+              "C_OPERATION": {
+                "value": "not"
+              },
+              "C_SIZE": {
+                "value": "1"
+              }
+            }
+          },
+          "v_tc_0": {
+            "vlnv": "xilinx.com:ip:v_tc:6.2",
+            "xci_name": "design_1_v_tc_0_0",
+            "parameters": {
+              "FSYNC_HSTART0": {
+                "value": "795"
+              },
+              "HAS_AXI4_LITE": {
+                "value": "false"
+              },
+              "VIDEO_MODE": {
+                "value": "480p"
+              },
+              "enable_detection": {
+                "value": "false"
+              },
+              "horizontal_blank_generation": {
+                "value": "false"
+              },
+              "vertical_blank_generation": {
+                "value": "false"
+              }
+            }
+          },
+          "fifo_generator_1": {
+            "vlnv": "xilinx.com:ip:fifo_generator:13.2",
+            "xci_name": "design_1_fifo_generator_1_0",
+            "parameters": {
+              "Enable_Safety_Circuit": {
+                "value": "true"
+              },
+              "FIFO_Implementation_rach": {
+                "value": "Common_Clock_Distributed_RAM"
+              },
+              "FIFO_Implementation_wach": {
+                "value": "Common_Clock_Distributed_RAM"
+              },
+              "FIFO_Implementation_wrch": {
+                "value": "Common_Clock_Distributed_RAM"
+              },
+              "Fifo_Implementation": {
+                "value": "Independent_Clocks_Block_RAM"
+              },
+              "Full_Flags_Reset_Value": {
+                "value": "1"
+              },
+              "INTERFACE_TYPE": {
+                "value": "Native"
+              },
+              "Input_Data_Width": {
+                "value": "24"
+              },
+              "Input_Depth": {
+                "value": "32768"
+              },
+              "Output_Data_Width": {
+                "value": "24"
+              }
+            }
+          },
+          "xlslice_0": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "design_1_xlslice_0_0",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "7"
+              },
+              "DIN_WIDTH": {
+                "value": "24"
+              },
+              "DOUT_WIDTH": {
+                "value": "8"
+              }
+            }
+          },
+          "xlslice_1": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "design_1_xlslice_0_1",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "15"
+              },
+              "DIN_TO": {
+                "value": "8"
+              },
+              "DIN_WIDTH": {
+                "value": "24"
+              },
+              "DOUT_WIDTH": {
+                "value": "8"
+              }
+            }
+          },
+          "xlslice_2": {
+            "vlnv": "xilinx.com:ip:xlslice:1.0",
+            "xci_name": "design_1_xlslice_0_2",
+            "parameters": {
+              "DIN_FROM": {
+                "value": "23"
+              },
+              "DIN_TO": {
+                "value": "16"
+              },
+              "DIN_WIDTH": {
+                "value": "24"
+              },
+              "DOUT_WIDTH": {
+                "value": "8"
+              }
+            }
+          },
+          "mux_rgb_0": {
+            "vlnv": "xilinx.com:module_ref:mux_rgb:1.0",
+            "xci_name": "design_1_mux_rgb_0_0",
+            "reference_info": {
+              "ref_type": "hdl",
+              "ref_name": "mux_rgb",
+              "boundary_crc": "0x0"
+            },
+            "ports": {
+              "red_in": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "green_in": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "blue_in": {
+                "direction": "I",
+                "left": "7",
+                "right": "0"
+              },
+              "mux_sel": {
+                "direction": "I"
+              },
+              "red_out": {
+                "direction": "O",
+                "left": "7",
+                "right": "0"
+              },
+              "green_out": {
+                "direction": "O",
+                "left": "7",
+                "right": "0"
+              },
+              "blue_out": {
+                "direction": "O",
+                "left": "7",
+                "right": "0"
+              }
+            }
+          }
+        },
+        "nets": {
+          "xlconcat_0_dout": {
+            "ports": [
+              "xlconcat_0/dout",
+              "fifo_generator_1/din"
+            ]
+          },
+          "util_vector_logic_0_Res": {
+            "ports": [
+              "util_vector_logic_0/Res",
+              "v_tc_0/resetn"
+            ]
+          },
+          "xlconstant_0_dout": {
+            "ports": [
+              "xlconstant_0/dout",
+              "v_tc_0/gen_clken"
+            ]
+          },
+          "fifo_generator_1_full": {
+            "ports": [
+              "fifo_generator_1/full",
+              "util_vector_logic_1/Op1"
+            ]
+          },
+          "mire_0_p_red": {
+            "ports": [
+              "red",
+              "xlconcat_0/In0"
+            ]
+          },
+          "mire_0_p_green_d0": {
+            "ports": [
+              "green",
+              "xlconcat_0/In1"
+            ]
+          },
+          "mire_0_p_blue_d0": {
+            "ports": [
+              "blue",
+              "xlconcat_0/In2"
+            ]
+          },
+          "Net": {
+            "ports": [
+              "rst",
+              "util_vector_logic_0/Op1",
+              "fifo_generator_1/rst"
+            ]
+          },
+          "fifo_generator_0_wr_ack": {
+            "ports": [
+              "util_vector_logic_1/Res",
+              "data_ack"
+            ]
+          },
+          "clk_wiz_0_clk_out1": {
+            "ports": [
+              "clk_pixel",
+              "fifo_generator_1/rd_clk",
+              "v_tc_0/clk"
+            ]
+          },
+          "v_tc_0_hsync_out": {
+            "ports": [
+              "v_tc_0/hsync_out",
+              "hsync_out_0"
+            ]
+          },
+          "v_tc_0_vsync_out": {
+            "ports": [
+              "v_tc_0/vsync_out",
+              "vsync_out_0"
+            ]
+          },
+          "v_tc_0_active_video_out": {
+            "ports": [
+              "v_tc_0/active_video_out",
+              "active_video_out_0",
+              "fifo_generator_1/rd_en",
+              "mux_rgb_0/mux_sel"
+            ]
+          },
+          "v_tc_0_fsync_out": {
+            "ports": [
+              "v_tc_0/fsync_out",
+              "fsync_out"
+            ]
+          },
+          "clk_wiz_0_clk_out2": {
+            "ports": [
+              "clk_system",
+              "fifo_generator_1/wr_clk"
+            ]
+          },
+          "mire_0_p_red_ap_vld": {
+            "ports": [
+              "data_vld",
+              "fifo_generator_1/wr_en"
+            ]
+          },
+          "fifo_generator_1_dout": {
+            "ports": [
+              "fifo_generator_1/dout",
+              "xlslice_0/Din",
+              "xlslice_1/Din",
+              "xlslice_2/Din"
+            ]
+          },
+          "mux_rgb_0_blue_out": {
+            "ports": [
+              "mux_rgb_0/blue_out",
+              "blue_out"
+            ]
+          },
+          "mux_rgb_0_green_out": {
+            "ports": [
+              "mux_rgb_0/green_out",
+              "green_out"
+            ]
+          },
+          "mux_rgb_0_red_out": {
+            "ports": [
+              "mux_rgb_0/red_out",
+              "red_out"
+            ]
+          },
+          "xlslice_0_Dout": {
+            "ports": [
+              "xlslice_0/Dout",
+              "mux_rgb_0/red_in"
+            ]
+          },
+          "xlslice_1_Dout": {
+            "ports": [
+              "xlslice_1/Dout",
+              "mux_rgb_0/green_in"
+            ]
+          },
+          "xlslice_2_Dout": {
+            "ports": [
+              "xlslice_2/Dout",
+              "mux_rgb_0/blue_in"
+            ]
+          }
+        }
+      },
+      "mire_0": {
+        "vlnv": "xilinx.com:hls:mire:1.1",
+        "xci_name": "design_1_mire_0_0"
+      },
+      "xlconstant_0": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_xlconstant_0_1"
+      }
+    },
+    "nets": {
+      "Net": {
+        "ports": [
+          "rst",
+          "clk_wiz_0/reset",
+          "video_controller/rst",
+          "mire_0/ap_rst"
+        ]
+      },
+      "clk_1": {
+        "ports": [
+          "clk",
+          "clk_wiz_0/clk_in1"
+        ]
+      },
+      "v_tc_0_vsync_out": {
+        "ports": [
+          "video_controller/vsync_out_0",
+          "vsync_out_0"
+        ]
+      },
+      "v_tc_0_hsync_out": {
+        "ports": [
+          "video_controller/hsync_out_0",
+          "hsync_out_0"
+        ]
+      },
+      "clk_wiz_0_clk_out1": {
+        "ports": [
+          "clk_wiz_0/clk_out1",
+          "video_controller/clk_pixel",
+          "clk_pixel",
+          "mire_0/ap_clk"
+        ]
+      },
+      "clk_wiz_0_clk_out2": {
+        "ports": [
+          "clk_wiz_0/clk_out2",
+          "video_controller/clk_system"
+        ]
+      },
+      "video_controller_Dout_0": {
+        "ports": [
+          "video_controller/red_out",
+          "red_out_0"
+        ]
+      },
+      "video_controller_Dout_1": {
+        "ports": [
+          "video_controller/green_out",
+          "green_out_0"
+        ]
+      },
+      "video_controller_Dout": {
+        "ports": [
+          "video_controller/blue_out",
+          "blue_out_0"
+        ]
+      },
+      "video_controller_active_video_out_0": {
+        "ports": [
+          "video_controller/active_video_out_0",
+          "active_video_out_0"
+        ]
+      },
+      "red_1": {
+        "ports": [
+          "mire_0/p_red",
+          "video_controller/red"
+        ]
+      },
+      "green_1": {
+        "ports": [
+          "mire_0/p_green",
+          "video_controller/green"
+        ]
+      },
+      "blue_1": {
+        "ports": [
+          "mire_0/p_blue",
+          "video_controller/blue"
+        ]
+      },
+      "video_controller_data_ack": {
+        "ports": [
+          "video_controller/data_ack",
+          "mire_0/p_red_ap_ack",
+          "mire_0/p_green_ap_ack",
+          "mire_0/p_blue_ap_ack"
+        ]
+      },
+      "mire_0_p_green_ap_vld": {
+        "ports": [
+          "mire_0/p_green_ap_vld",
+          "video_controller/data_vld"
+        ]
+      },
+      "xlconstant_0_dout": {
+        "ports": [
+          "xlconstant_0/dout",
+          "mire_0/ap_start"
+        ]
+      }
+    }
+  }
+}
